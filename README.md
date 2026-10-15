@@ -14,6 +14,21 @@ offsets and a short verbatim quote it came from; a value whose quote cannot be f
 
 ![Review page: source labeling with highlighted evidence (FDA guidance example table) and the extracted conditions](docs/screenshots/review.png)
 
+## Try it in your browser
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bizutudor/mrcond?quickstart=1)
+
+The Codespace installs the package, builds the web UI, downloads the public Track R documents (`mrcond fetch`) and
+starts the app; the first start takes a few minutes. If no browser tab opens, open port 8000 from the *Ports* tab; if
+the app is not running, start it with `mrcond serve`. Things to try:
+
+1. **Review labeling** → *Star Active Implant System, whole-body exams* (FDA example): every extracted condition links
+   to its highlighted quote, and each value can be accepted, edited or rejected.
+2. **Check an exam** → select the same implant, keep the generic 3 T preset and enter a whole-body SAR above the
+   labeled 1.2 W/kg (for example 1.4 W/kg): the result is *Conflict found*, with the quote that sets the limit.
+   Clear a required value and the result becomes *Insufficient information / needs review*, never a pass.
+3. In the terminal: `mrcond scenarios` (checker suite: 0 unsafe results) and `pytest`.
+
 ---
 
 ## Why
