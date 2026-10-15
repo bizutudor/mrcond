@@ -1,0 +1,16 @@
+{
+ "doc_id": "fda-guidance-2023-t3",
+ "source_type": "pdf",
+ "text_extractor": "pypdf 6.20.1",
+ "meta": {
+  "n_pages_total": 32,
+  "url": "https://www.fda.gov/media/74201/download",
+  "sha256": "cc53fb71b57ab3df9abb9d6d81a2fd0f5c8b8bda8df60e315589f7132636e29b"
+ },
+ "pages": [
+  {
+   "number": 29,
+   "text": "Contains Nonbinding Recommendations\n26\nAppendix 2. MR Conditional Labeling Examples\nMRI Safety Information\nA person  with the Star implant may be safely scanned under the following conditions. Failure to \nfollow these conditions may result in injury.\nDevice Name Star implant\nStatic Magnetic Field  Strength (B 0) 1.5T or 3.0T\nMaximum Spatial Field Gradient 30 T/m (3,000 gauss /cm)\nRF Excitation Circularly Polarized (CP)\nRF Transmit Coil Type There are no Transmit Coil restrictions\nOperating Mode Normal Operating Mode\nMaximum Whole -Body SAR 2 W/kg  (Normal Operating Mode)\nMaximum Head SAR 3.2 W/kg  (Normal Operating Mode)\nScan Duration\n2 W/kg whole -body average SAR for 60 minutes of \ncontinuous RF (a sequence or back to back series/scan \nwithout breaks)\nMR Image Artifact The presence of this implant may produce an image artifact.\nTable 3. Example MR Conditional labeling for a passive medical device called the Star \nimplant.\n"
+  }
+ ]
+}

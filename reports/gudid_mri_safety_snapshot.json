@@ -1,0 +1,94 @@
+{
+ "retrieved": "2026-10-15",
+ "openfda_last_updated": "2026-10-01",
+ "query": "https://api.fda.gov/device/udi.json?search=gmdn_terms.implantable:true&count=mri_safety.exact",
+ "total": 1141848,
+ "counts": {
+  "Labeling does not contain MRI Safety Information": 901918,
+  "MR Conditional": 183726,
+  "MR Safe": 31129,
+  "MR Unsafe": 25075
+ },
+ "by_publish_year": {
+  "2014": {
+   "Labeling does not contain MRI Safety Information": 14660,
+   "MR Conditional": 4689,
+   "MR Safe": 522,
+   "MR Unsafe": 140
+  },
+  "2015": {
+   "Labeling does not contain MRI Safety Information": 255478,
+   "MR Conditional": 36718,
+   "MR Safe": 6325,
+   "MR Unsafe": 2284
+  },
+  "2016": {
+   "Labeling does not contain MRI Safety Information": 91089,
+   "MR Conditional": 11805,
+   "MR Safe": 1804,
+   "MR Unsafe": 1840
+  },
+  "2017": {
+   "Labeling does not contain MRI Safety Information": 58166,
+   "MR Conditional": 11532,
+   "MR Safe": 1586,
+   "MR Unsafe": 1203
+  },
+  "2018": {
+   "Labeling does not contain MRI Safety Information": 54279,
+   "MR Conditional": 8392,
+   "MR Safe": 2053,
+   "MR Unsafe": 1248
+  },
+  "2019": {
+   "Labeling does not contain MRI Safety Information": 94286,
+   "MR Conditional": 11573,
+   "MR Safe": 1372,
+   "MR Unsafe": 3185
+  },
+  "2020": {
+   "Labeling does not contain MRI Safety Information": 58783,
+   "MR Conditional": 10090,
+   "MR Safe": 2108,
+   "MR Unsafe": 2451
+  },
+  "2021": {
+   "Labeling does not contain MRI Safety Information": 56792,
+   "MR Conditional": 9678,
+   "MR Safe": 1262,
+   "MR Unsafe": 2684
+  },
+  "2022": {
+   "Labeling does not contain MRI Safety Information": 46015,
+   "MR Conditional": 12345,
+   "MR Safe": 2849,
+   "MR Unsafe": 1055
+  },
+  "2023": {
+   "Labeling does not contain MRI Safety Information": 42038,
+   "MR Conditional": 13678,
+   "MR Safe": 3613,
+   "MR Unsafe": 2151
+  },
+  "2024": {
+   "Labeling does not contain MRI Safety Information": 49210,
+   "MR Conditional": 18589,
+   "MR Safe": 2344,
+   "MR Unsafe": 2186
+  },
+  "2025": {
+   "Labeling does not contain MRI Safety Information": 51378,
+   "MR Conditional": 22577,
+   "MR Safe": 2453,
+   "MR Unsafe": 2299
+  },
+  "2026": {
+   "Labeling does not contain MRI Safety Information": 29744,
+   "MR Conditional": 12060,
+   "MR Safe": 2838,
+   "MR Unsafe": 2349
+  }
+ },
+ "license": "openFDA data: CC0 (https://open.fda.gov/license/). GMDN terms: separate GMDN Agency licence (no term text included).",
+ "matches_2026_10_15_snapshot": true
+}

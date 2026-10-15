@@ -1,0 +1,53 @@
+publish_year,mri_safety,count,share_percent
+2014,Labeling does not contain MRI Safety Information,14660,73.26
+2014,MR Conditional,4689,23.43
+2014,MR Safe,522,2.61
+2014,MR Unsafe,140,0.7
+2015,Labeling does not contain MRI Safety Information,255478,84.93
+2015,MR Conditional,36718,12.21
+2015,MR Safe,6325,2.1
+2015,MR Unsafe,2284,0.76
+2016,Labeling does not contain MRI Safety Information,91089,85.5
+2016,MR Conditional,11805,11.08
+2016,MR Safe,1804,1.69
+2016,MR Unsafe,1840,1.73
+2017,Labeling does not contain MRI Safety Information,58166,80.24
+2017,MR Conditional,11532,15.91
+2017,MR Safe,1586,2.19
+2017,MR Unsafe,1203,1.66
+2018,Labeling does not contain MRI Safety Information,54279,82.28
+2018,MR Conditional,8392,12.72
+2018,MR Safe,2053,3.11
+2018,MR Unsafe,1248,1.89
+2019,Labeling does not contain MRI Safety Information,94286,85.39
+2019,MR Conditional,11573,10.48
+2019,MR Safe,1372,1.24
+2019,MR Unsafe,3185,2.88
+2020,Labeling does not contain MRI Safety Information,58783,80.05
+2020,MR Conditional,10090,13.74
+2020,MR Safe,2108,2.87
+2020,MR Unsafe,2451,3.34
+2021,Labeling does not contain MRI Safety Information,56792,80.65
+2021,MR Conditional,9678,13.74
+2021,MR Safe,1262,1.79
+2021,MR Unsafe,2684,3.81
+2022,Labeling does not contain MRI Safety Information,46015,73.9
+2022,MR Conditional,12345,19.83
+2022,MR Safe,2849,4.58
+2022,MR Unsafe,1055,1.69
+2023,Labeling does not contain MRI Safety Information,42038,68.38
+2023,MR Conditional,13678,22.25
+2023,MR Safe,3613,5.88
+2023,MR Unsafe,2151,3.5
+2024,Labeling does not contain MRI Safety Information,49210,68.04
+2024,MR Conditional,18589,25.7
+2024,MR Safe,2344,3.24
+2024,MR Unsafe,2186,3.02
+2025,Labeling does not contain MRI Safety Information,51378,65.28
+2025,MR Conditional,22577,28.68
+2025,MR Safe,2453,3.12
+2025,MR Unsafe,2299,2.92
+2026,Labeling does not contain MRI Safety Information,29744,63.3
+2026,MR Conditional,12060,25.66
+2026,MR Safe,2838,6.04
+2026,MR Unsafe,2349,5.0

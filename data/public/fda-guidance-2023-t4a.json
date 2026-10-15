@@ -1,0 +1,16 @@
+{
+ "doc_id": "fda-guidance-2023-t4a",
+ "source_type": "pdf",
+ "text_extractor": "pypdf 6.20.1",
+ "meta": {
+  "n_pages_total": 32,
+  "url": "https://www.fda.gov/media/74201/download",
+  "sha256": "cc53fb71b57ab3df9abb9d6d81a2fd0f5c8b8bda8df60e315589f7132636e29b"
+ },
+ "pages": [
+  {
+   "number": 30,
+   "text": "Contains Nonbinding Recommendations\n27\nMRI Safety Information\nFor Whole-Body MR Examinations: A person implanted with the Star Active Implant System may be safely \nscanned anywhere in the body at 1.5T or 3.0T under the following conditions. Failure to follow these \nconditions may result in injury.\nParameter Condition\nDevice Name Star Stimulator\nStar Lead\nDevice Configuration Stimulation OFF\nStatic Magnetic Field Strength (B0) 1.5T and 3T\nType of Nuclei 31P (phosphorus)\nMR Scanner Type Cylindrical\nB0 Field Orientation Horizontal\nMaximum Spatial Field Gradient 25 T/m (2500 gauss/cm)\nMaximum Gradient Slew Rate 200 T/m/s per axis\nRF Excitation Circularly Polarized (CP)\nRF Transmit Coil Type Integrated Whole Body Transmit Coil\nRF Receive Coil Type Any\nOperating Mode Normal Operating Mode\nRF Conditions For 1.5T MR Scanner: Whole-Body SAR ≤ 2 W/kg\nFor 3T MR Scanner : B1+rms ≤ 1.7 μT; for MR scanners that \ndo not report B1+rms, Whole-Body SAR ≤ 1.2 W/kg\nScan Duration Scan for up to 30 minutes. Wait 30 minutes before the next \nimaging session.\nScan Regions Any landmark is acceptable\nImage Artifact The presence of the Star Active Implant System may \nproduce an image artifact. Some manipulation of scan \nparameters may be needed to compensate for the artifact.\nTable 4a. Example showing conditions for safe scanning that can be clearly provided in a \ntable for an MR Conditional active implant called the Star Active Implant System. Table 4a \ngives conditions for whole-body MR examinations. Information that is more clearly provided \nin non-tabular form may be included after the tables, for instance, instructions to be followed \nbefore and/or after an MR exam and additional instructions or information essential for safe \nuse in the MR environment. \n"
+  }
+ ]
+}

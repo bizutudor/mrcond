@@ -1,0 +1,262 @@
+{
+ "doc_id": "bsc-innova-stent-ifu",
+ "device_name": "Innova Stent",
+ "manufacturer": "Boston Scientific",
+ "device_type": "peripheral self-expanding stent",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "bsc-innova-stent-ifu",
+    "page": 3,
+    "char_start": 3314,
+    "char_end": 3390,
+    "quote": "Non-clinical testing has demonstrated the Innova™ Stents are MR \nConditional",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "scope": "Landmark (center of RF coil) above the umbilicus",
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 18,
+      "char_end": 59,
+      "quote": "Static magnetic field of 1.5 or 3.0 Tesla",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 40.0,
+    "unit": "Tesla/m",
+    "normalized_value": 40.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 64,
+      "char_end": 142,
+      "quote": "Highest spatial gradient magnetic field of 40 Tesla/m (4,000 Gauss/cm) or less",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 232,
+      "char_end": 298,
+      "quote": "≤2 W/kg for landmarks (i.e. center of RF coil) above the umbilicus",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Landmarks (center of RF coil) above the umbilicus",
+    "normalized_value": "Landmarks (center of RF coil) above the umbilicus",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 232,
+      "char_end": 298,
+      "quote": "≤2 W/kg for landmarks (i.e. center of RF coil) above the umbilicus",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 12.0,
+    "unit": "mm",
+    "normalized_value": 12.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 575,
+      "char_end": 666,
+      "quote": "the image artifact caused by the device extends approximately 12 mm from the \nInnova™ stent",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional for single and overlapping lengths up to 200 mm",
+    "normalized_value": "MR Conditional for single and overlapping lengths up to 200 mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 3,
+      "char_start": 3375,
+      "char_end": 3437,
+      "quote": "MR \nConditional for single and overlapping lengths up to 200mm",
+      "verified": true
+     }
+    ]
+   }
+  },
+  {
+   "set_id": "cs2",
+   "scope": "Landmark below the umbilicus",
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 18,
+      "char_end": 59,
+      "quote": "Static magnetic field of 1.5 or 3.0 Tesla",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 40.0,
+    "unit": "Tesla/m",
+    "normalized_value": 40.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 64,
+      "char_end": 142,
+      "quote": "Highest spatial gradient magnetic field of 40 Tesla/m (4,000 Gauss/cm) or less",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 1.0,
+    "unit": "W/kg",
+    "normalized_value": 1.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 303,
+      "char_end": 344,
+      "quote": "≤1 W/kg for landmarks below the umbilicus",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Landmarks below the umbilicus",
+    "normalized_value": "Landmarks below the umbilicus",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 303,
+      "char_end": 344,
+      "quote": "≤1 W/kg for landmarks below the umbilicus",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 12.0,
+    "unit": "mm",
+    "normalized_value": 12.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 4,
+      "char_start": 575,
+      "char_end": 666,
+      "quote": "the image artifact caused by the device extends approximately 12 mm from the \nInnova™ stent",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional for single and overlapping lengths up to 200 mm",
+    "normalized_value": "MR Conditional for single and overlapping lengths up to 200 mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-innova-stent-ifu",
+      "page": 3,
+      "char_start": 3375,
+      "char_end": 3437,
+      "quote": "MR \nConditional for single and overlapping lengths up to 200mm",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "'15 minutes of continuous scanning' belongs to the heating result, not a scan-time condition."
+  ]
+ }
+}

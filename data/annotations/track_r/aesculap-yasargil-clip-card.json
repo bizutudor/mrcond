@@ -1,0 +1,64 @@
+{
+ "doc_id": "aesculap-yasargil-clip-card",
+ "device_name": "YASARGIL Titanium / Phynox aneurysm clip",
+ "manufacturer": "Aesculap AG (B. Braun)",
+ "device_type": "intracranial aneurysm clip",
+ "mr_status": {
+  "value": "Not stated",
+  "normalized_value": "Not stated"
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": 3.0,
+    "unit": "T",
+    "normalized_value": [
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-yasargil-clip-card",
+      "page": 1,
+      "char_start": 1580,
+      "char_end": 1620,
+      "quote": "Static magnetic field of 3 Tesla or less",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 720.0,
+    "unit": "Gauss/cm",
+    "normalized_value": 7.2,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-yasargil-clip-card",
+      "page": 1,
+      "char_start": 1623,
+      "char_end": 1677,
+      "quote": "Maximum spatial gradient field of 720 Gauss/cm or less",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "The card lists scanning conditions but does not use the term 'MR Conditional' for the clip.",
+   "'15 minutes of continuous scanning' belongs to the heating result."
+  ]
+ }
+}

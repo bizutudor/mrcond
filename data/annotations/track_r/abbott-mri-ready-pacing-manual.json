@@ -1,0 +1,463 @@
+{
+ "doc_id": "abbott-mri-ready-pacing-manual",
+ "device_name": "St. Jude Medical MR Conditional pacing system (Accent MRI / Assurity MRI / Endurity MRI / Endurity with Tendril MRI LPA1200M lead)",
+ "manufacturer": "Abbott (St. Jude Medical)",
+ "device_type": "cardiac pacemaker system",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "abbott-mri-ready-pacing-manual",
+    "page": 5,
+    "char_start": 567,
+    "char_end": 675,
+    "quote": "The St. Jude Medical MR Conditional pacing system includes a St. Jude Medical MR Conditional pulse generator",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "scope": "Scan Set A (Accent MRI, Assurity MRI, Endurity MRI + Tendril MRI LPA1200M)",
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 153,
+      "char_end": 222,
+      "quote": "Imaging System 1.5 Tesla/64 MHz excitation \nfrequency (hydrogen atom)",
+      "verified": true
+     }
+    ]
+   },
+   "nucleus": {
+    "status": "EXTRACTED",
+    "value": "hydrogen atom",
+    "normalized_value": [
+     "1H"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 153,
+      "char_end": 222,
+      "quote": "Imaging System 1.5 Tesla/64 MHz excitation \nfrequency (hydrogen atom)",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "Closed Bore",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 93,
+      "char_end": 151,
+      "quote": "Scanner Type Horizontal Closed Bore Horizontal Closed Bore",
+      "verified": true
+     }
+    ]
+   },
+   "b0_orientation": {
+    "status": "EXTRACTED",
+    "value": "Horizontal",
+    "normalized_value": "horizontal",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 93,
+      "char_end": 151,
+      "quote": "Scanner Type Horizontal Closed Bore Horizontal Closed Bore",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 369,
+      "char_end": 409,
+      "quote": "Gradient Slew Rate ¢200 T/m/s ¢200 T/m/s",
+      "verified": true
+     }
+    ]
+   },
+   "receive_coil": {
+    "status": "EXTRACTED",
+    "value": "Receive-only coils",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 1054,
+      "char_end": 1094,
+      "quote": "Receive -only coils can be safely \nused.",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 4.0,
+    "unit": "W/kg",
+    "normalized_value": 4.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 280,
+      "char_end": 337,
+      "quote": "Whole Body SAR (Specific Absorption Rate) ¢4 W/kg ¢2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 3.2,
+    "unit": "W/kg",
+    "normalized_value": 3.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 339,
+      "char_end": 367,
+      "quote": "Head SAR ¢3.2 W/kg ¢3.2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Full Body",
+    "normalized_value": "unrestricted",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 411,
+      "char_end": 433,
+      "quote": "Scan Regions Full Body",
+      "verified": true
+     }
+    ]
+   },
+   "device_configuration": {
+    "status": "EXTRACTED",
+    "value": "MRI Settings enabled",
+    "normalized_value": "MRI Settings enabled",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 5,
+      "char_start": 1108,
+      "char_end": 1162,
+      "quote": "Enable the MRI Settings to turn on a mode of operation",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "Local transmit-only or transmit/receive coils not studied",
+    "normalized_value": "Local transmit-only or transmit/receive coils not studied",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 965,
+      "char_end": 1053,
+      "quote": "Use of local tra nsmit -only coils or local transmit/receive coils has not been studied.",
+      "verified": true
+     }
+    ]
+   }
+  },
+  {
+   "set_id": "cs2",
+   "scope": "Scan Set B (Endurity PM1162/PM2162 + Tendril MRI LPA1200M)",
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 153,
+      "char_end": 222,
+      "quote": "Imaging System 1.5 Tesla/64 MHz excitation \nfrequency (hydrogen atom)",
+      "verified": true
+     }
+    ]
+   },
+   "nucleus": {
+    "status": "EXTRACTED",
+    "value": "hydrogen atom",
+    "normalized_value": [
+     "1H"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 153,
+      "char_end": 222,
+      "quote": "Imaging System 1.5 Tesla/64 MHz excitation \nfrequency (hydrogen atom)",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "Closed Bore",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 93,
+      "char_end": 151,
+      "quote": "Scanner Type Horizontal Closed Bore Horizontal Closed Bore",
+      "verified": true
+     }
+    ]
+   },
+   "b0_orientation": {
+    "status": "EXTRACTED",
+    "value": "Horizontal",
+    "normalized_value": "horizontal",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 93,
+      "char_end": 151,
+      "quote": "Scanner Type Horizontal Closed Bore Horizontal Closed Bore",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 369,
+      "char_end": 409,
+      "quote": "Gradient Slew Rate ¢200 T/m/s ¢200 T/m/s",
+      "verified": true
+     }
+    ]
+   },
+   "receive_coil": {
+    "status": "EXTRACTED",
+    "value": "Receive-only coils",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 1054,
+      "char_end": 1094,
+      "quote": "Receive -only coils can be safely \nused.",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 280,
+      "char_end": 337,
+      "quote": "Whole Body SAR (Specific Absorption Rate) ¢4 W/kg ¢2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 3.2,
+    "unit": "W/kg",
+    "normalized_value": 3.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 339,
+      "char_end": 367,
+      "quote": "Head SAR ¢3.2 W/kg ¢3.2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "minutes",
+    "normalized_value": 30.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 758,
+      "char_end": 869,
+      "quote": "the accumulated imaging time per MRI procedure (as displayed \nby the MRI scanner) should not exceed 30 minutes.",
+      "verified": true
+     }
+    ]
+   },
+   "wait_time_min": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "minutes",
+    "normalized_value": 30.0,
+    "normalized_unit": "min",
+    "comparator": "ge",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 870,
+      "char_end": 962,
+      "quote": "Do not start another MRI procedure until 30 minutes after the \nend of the initial procedure.",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Isocenter 10 cm superior to C1 vertebra or at/inferior to L4 vertebra",
+    "normalized_value": "Isocenter 10 cm superior to C1 vertebra or at/inferior to L4 vertebra",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 434,
+      "char_end": 536,
+      "quote": "Superior: Isocenter 10 cm superior to C1 \nvertebra \nInferior: Isocenter at or inferior to L4 \nvertebra",
+      "verified": true
+     }
+    ]
+   },
+   "device_configuration": {
+    "status": "EXTRACTED",
+    "value": "MRI Settings enabled",
+    "normalized_value": "MRI Settings enabled",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 5,
+      "char_start": 1108,
+      "char_end": 1162,
+      "quote": "Enable the MRI Settings to turn on a mode of operation",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "Local transmit-only or transmit/receive coils not studied",
+    "normalized_value": "Local transmit-only or transmit/receive coils not studied",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "page": 6,
+      "char_start": 965,
+      "char_end": 1053,
+      "quote": "Use of local tra nsmit -only coils or local transmit/receive coils has not been studied.",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "The text layer renders the 'less than or equal' sign as '¢'.",
+   "Scan set depends on the pulse generator/lead combination (Table 2)."
+  ]
+ }
+}

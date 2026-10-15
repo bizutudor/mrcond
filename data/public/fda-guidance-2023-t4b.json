@@ -1,0 +1,16 @@
+{
+ "doc_id": "fda-guidance-2023-t4b",
+ "source_type": "pdf",
+ "text_extractor": "pypdf 6.20.1",
+ "meta": {
+  "n_pages_total": 32,
+  "url": "https://www.fda.gov/media/74201/download",
+  "sha256": "cc53fb71b57ab3df9abb9d6d81a2fd0f5c8b8bda8df60e315589f7132636e29b"
+ },
+ "pages": [
+  {
+   "number": 31,
+   "text": "Contains Nonbinding Recommendations\n28\nMRI Safety Information\nFor Head MR Examinations: A patient implanted with the Star Active Implant System may safely receive a \nhead scan at 1.5T or 3.0T under the following conditions. Failure to follow these conditions may result in \ninjury.\nParameter Condition\nDevice Name Star Stimulator\nStar Lead\nDevice Configuration Stimulation OFF\nStatic Magnetic Field Strength (B0) 1.5T and 3T\nType of Nuclei No additional nuclei\nMR Scanner Type Cylindrical\nB0 Field Orientation Horizontal\nMaximum Spatial Field Gradient 25 T/m (2500 gauss/cm)\nMaximum Gradient Slew Rate 200 T/m/s per axis\nRF Excitation Circularly Polarized (CP)\nRF Coil Type Detachable Head Transmit/Receive Coil ONLY\nOperating Mode Normal Operating Mode or\nFirst Level Controlled Operating Mode\nMaximum Head SAR 3.2 W/kg\nScan Duration There is no limit on scan duration.\nScan Regions Head Only\nImage Artifact The Star Active Implant System is not implanted in the head. No \nimage artifact should be seen in a head MRI scan.\nTable 4b. Example showing conditions for safe scanning that can be clearly provided in a \ntable for an MR Conditional active implant called the Star Active Implant System. Table 4a \ngives conditions for whole body MR examinations. Table 4b gives conditions for head MR \nexaminations. Information that is more clearly provided in non-tabular form may be included \nafter the tables, for instance instructions to be followed before and/or after an MR exam and \nadditional instructions or information essential for safe use in the MR environment. \n"
+  }
+ ]
+}

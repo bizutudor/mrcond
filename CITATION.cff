@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use MRCond, please cite it as below. MRCond is a research prototype, not a medical device."
+title: "MRCond: an open benchmark and evidence-grounded pipeline for MR Conditional implant labeling"
+type: software
+version: 0.1.0
+date-released: 2026-10-15
+license: MIT
+authors:
+  - family-names: Bizu
+    given-names: Tudor-Costin
+    affiliation: "Institut Polytechnique de Paris (M1 Biomedical Engineering)"
+keywords:
+  - MRI safety
+  - MR Conditional
+  - medical implants
+  - information extraction
+  - benchmark
+  - large language models
+  - decision support

@@ -1,0 +1,149 @@
+{
+ "doc_id": "cook-celect-platinum-ivc-ifu",
+ "device_name": "Celect Platinum Vena Cava Filter",
+ "manufacturer": "Cook Medical",
+ "device_type": "inferior vena cava filter",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "cook-celect-platinum-ivc-ifu",
+    "page": 5,
+    "char_start": 1213,
+    "char_end": 1297,
+    "quote": "Non-clinical\ttesting\thas\tdemonstrated\tthat\tthe\tCook\t\nCelect\tFilter\tis\tMR\tConditional",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "page": 5,
+      "char_start": 1567,
+      "char_end": 1615,
+      "quote": "Static\tmagnetic\tfield\tof\t3.0\tTesla\tor\t1.5\tTesla.",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 1600.0,
+    "unit": "Gauss/cm",
+    "normalized_value": 16.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "page": 5,
+      "char_start": 1619,
+      "char_end": 1690,
+      "quote": "Maximum\tspatial\tmagnetic\tgradient\tof\t1600\t\nGauss/cm (16.0 T/m) or less.",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal operating mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "page": 5,
+      "char_start": 1694,
+      "char_end": 1716,
+      "quote": "Normal\toperating\tmode.",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "page": 5,
+      "char_start": 1748,
+      "char_end": 1879,
+      "quote": "whole-body-\naveraged specific absorption rate (SAR) of 2.0\tW/\nkg for 15 minutes of scanning or less (i.e., per \nscanning sequence).",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 15.0,
+    "unit": "minutes",
+    "normalized_value": 15.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "page": 5,
+      "char_start": 1748,
+      "char_end": 1879,
+      "quote": "whole-body-\naveraged specific absorption rate (SAR) of 2.0\tW/\nkg for 15 minutes of scanning or less (i.e., per \nscanning sequence).",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 21.0,
+    "unit": "mm",
+    "normalized_value": 21.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "page": 5,
+      "char_start": 3073,
+      "char_end": 3167,
+      "quote": "the\tarea\tof\t\ninterest is within approximately 21 mm of the position \nof the Cook Celect Filter",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "Heating paragraphs (2.05/2.08 W/kg, 15 minutes of MRI) are test results."
+  ]
+ }
+}

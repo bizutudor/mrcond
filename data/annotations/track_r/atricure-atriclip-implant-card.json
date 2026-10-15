@@ -1,0 +1,166 @@
+{
+ "doc_id": "atricure-atriclip-implant-card",
+ "device_name": "LAA Exclusion System Clip (AtriClip)",
+ "manufacturer": "AtriCure",
+ "device_type": "left atrial appendage exclusion clip",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "atricure-atriclip-implant-card",
+    "page": 1,
+    "char_start": 1863,
+    "char_end": 1911,
+    "quote": "The LAA Exclusion System Clip is MR Conditional.",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2086,
+      "char_end": 2149,
+      "quote": "Nominal Values of Static Magnetic Field: 1.5-Tesla or 3.0-Tesla",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 40.0,
+    "unit": "T/m",
+    "normalized_value": 40.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2152,
+      "char_end": 2207,
+      "quote": "Maximum Spatial Field Gradient: 40-T/m (4,000-gauss/cm)",
+      "verified": true
+     }
+    ]
+   },
+   "rf_excitation": {
+    "status": "EXTRACTED",
+    "value": "Circularly Polarized (CP)",
+    "normalized_value": [
+     "CP"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2210,
+      "char_end": 2290,
+      "quote": "Type of RF Excitation: Circularly Polarized (CP) (i.e., Quadrature Transmission)",
+      "verified": true
+     }
+    ]
+   },
+   "transmit_coil": {
+    "status": "EXTRACTED",
+    "value": "There are no transmit RF coil restrictions",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2293,
+      "char_end": 2365,
+      "quote": "Transmit RF Coil Information: There are no transmit RF coil restrictions",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2368,
+      "char_end": 2418,
+      "quote": "Operating Mode of MR System: Normal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2421,
+      "char_end": 2484,
+      "quote": "Maximum Whole Body Averaged SAR: 2-W/kg (Normal Operating Mode)",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 60.0,
+    "unit": "minutes",
+    "normalized_value": 60.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "atricure-atriclip-implant-card",
+      "page": 1,
+      "char_start": 2487,
+      "char_end": 2586,
+      "quote": "Limits on Scan Duration: Whole body averaged SAR of 2-W/kg for 60 minutes of continuous RF exposure",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold."
+  ]
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "doc_id": "gore-tigris-mri-html",
+ "device_name": "GORE TIGRIS Vascular Stent (discontinued)",
+ "manufacturer": "W. L. Gore & Associates",
+ "device_type": "peripheral vascular stent",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "gore-tigris-mri-html",
+    "page": 1,
+    "char_start": 781,
+    "char_end": 806,
+    "quote": "MR status\n\nMR Conditional",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "gore-tigris-mri-html",
+      "page": 1,
+      "char_start": 808,
+      "char_end": 863,
+      "quote": "Static magnetic fields strength\n\n1.5 tesla or 3.0 tesla",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 4000.0,
+    "unit": "gauss/cm",
+    "normalized_value": 40.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-tigris-mri-html",
+      "page": 1,
+      "char_start": 865,
+      "char_end": 904,
+      "quote": "Maximum spatial gradient\n\n4000 gauss/cm",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 4.0,
+    "unit": "W/kg",
+    "normalized_value": 4.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-tigris-mri-html",
+      "page": 1,
+      "char_start": 906,
+      "char_end": 970,
+      "quote": "Max whole-body-averaged specific absorption rate (SAR)\n\n4.0 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 15.0,
+    "unit": "minutes",
+    "normalized_value": 15.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-tigris-mri-html",
+      "page": 1,
+      "char_start": 972,
+      "char_end": 1009,
+      "quote": "Scan duration\n\n15 minutes of scanning",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 5.0,
+    "unit": "mm",
+    "normalized_value": 5.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "gore-tigris-mri-html",
+      "page": 1,
+      "char_start": 1068,
+      "char_end": 1134,
+      "quote": "The image artifact extends approximately 5 mm from both the device",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "beautifulsoup4 4.15.0",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold."
+  ]
+ }
+}

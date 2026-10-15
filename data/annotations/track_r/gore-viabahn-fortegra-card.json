@@ -1,0 +1,184 @@
+{
+ "doc_id": "gore-viabahn-fortegra-card",
+ "device_name": "GORE VIABAHN FORTEGRA Venous Stent",
+ "manufacturer": "W. L. Gore & Associates",
+ "device_type": "venous stent",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "gore-viabahn-fortegra-card",
+    "page": 1,
+    "char_start": 1159,
+    "char_end": 1210,
+    "quote": "MR Conditional\nCaution\nConsult Instructions for Use",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 390,
+      "char_end": 438,
+      "quote": "Static Magnetic Field Strength (B0) 1.5T or 3.0T",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 40.0,
+    "unit": "T/m",
+    "normalized_value": 40.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 439,
+      "char_end": 493,
+      "quote": "Maximum Spatial Field Gradient 40 T/m (4,000 gauss/cm)",
+      "verified": true
+     }
+    ]
+   },
+   "rf_excitation": {
+    "status": "EXTRACTED",
+    "value": "There are no RF excitation restrictions",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 494,
+      "char_end": 547,
+      "quote": "RF Excitation There are no RF excitation restrictions",
+      "verified": true
+     }
+    ]
+   },
+   "transmit_coil": {
+    "status": "EXTRACTED",
+    "value": "There are no Transmit Coil restrictions",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 548,
+      "char_end": 609,
+      "quote": "RF Transmit Coil Type There are no Transmit Coil restrictions",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 610,
+      "char_end": 646,
+      "quote": "Operating Mode Normal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 647,
+      "char_end": 700,
+      "quote": "Maximum Whole-Body SAR 2 W/kg (Normal Operating Mode)",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 60.0,
+    "unit": "minutes",
+    "normalized_value": 60.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 701,
+      "char_end": 835,
+      "quote": "Scan Duration 2 W/kg whole-body averaged SAR for 60 minutes of \ncontinuous RF (a sequence or back to back series/scan \nwithout breaks)",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 5.0,
+    "unit": "mm",
+    "normalized_value": 5.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "page": 1,
+      "char_start": 973,
+      "char_end": 1024,
+      "quote": "the artifact may extend up to 5mm \nfrom the implant",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold."
+  ]
+ }
+}

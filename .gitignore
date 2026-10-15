@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Web
+web/node_modules/
+web/dist/
+web/*.tsbuildinfo
+
+# Manufacturer documents are never committed: fetch them with `mrcond fetch`
+data/raw/
+data/text/
+
+# Local models and scratch
+reports/quick/
+*.gguf
+models/
+.DS_Store

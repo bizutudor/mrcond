@@ -1,0 +1,241 @@
+{
+ "doc_id": "bsc-lux-dx-icm-mri-guide",
+ "device_name": "LUX-Dx / LUX-Dx II / LUX-Dx II+ insertable cardiac monitor",
+ "manufacturer": "Boston Scientific",
+ "device_type": "insertable cardiac monitor",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "bsc-lux-dx-icm-mri-guide",
+    "page": 8,
+    "char_start": 53,
+    "char_end": 94,
+    "quote": "The ICM device is an MRConditional device",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1622,
+      "char_end": 1700,
+      "quote": "MRI magnetstrength of1.5 T (approximately 64 MHz)or 3 T (approximately 128MHz)",
+      "verified": true
+     }
+    ]
+   },
+   "nucleus": {
+    "status": "EXTRACTED",
+    "value": "1H proton",
+    "normalized_value": [
+     "1H"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1572,
+      "char_end": 1618,
+      "quote": "Horizontal,1H proton,closed bore scanners only",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "closed bore",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1572,
+      "char_end": 1618,
+      "quote": "Horizontal,1H proton,closed bore scanners only",
+      "verified": true
+     }
+    ]
+   },
+   "b0_orientation": {
+    "status": "EXTRACTED",
+    "value": "Horizontal",
+    "normalized_value": "horizontal",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1572,
+      "char_end": 1618,
+      "quote": "Horizontal,1H proton,closed bore scanners only",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "T/m",
+    "normalized_value": 30.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1704,
+      "char_end": 1755,
+      "quote": "Spatial gradientno greater than 30 T/m (3,000 G/cm)",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1986,
+      "char_end": 2039,
+      "quote": "Maximum specified gradientslew rate≤200 T/m/s peraxis",
+      "verified": true
+     }
+    ]
+   },
+   "receive_coil": {
+    "status": "EXTRACTED",
+    "value": "receive-only coils not restricted",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 2142,
+      "char_end": 2187,
+      "quote": "Theuse of\nreceive-onlycoilsis not restricted.",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "First Level Controlled Operating Mode",
+    "normalized_value": "first_level",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1797,
+      "char_end": 1899,
+      "quote": "SAR limits up to First Level ControlledOperating Mode1 may beapplied for the entireactive scan session",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 4.0,
+    "unit": "W/kg",
+    "normalized_value": 4.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1914,
+      "char_end": 1942,
+      "quote": "Whole bodyaveraged,≤4.0 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 3.2,
+    "unit": "W/kg",
+    "normalized_value": 3.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 1945,
+      "char_end": 1960,
+      "quote": "Head, ≤3.2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "Local transmit coils not directly over the device; supine or prone position only; models M301, M302, M312",
+    "normalized_value": "Local transmit coils not directly over the device; supine or prone position only; models M301, M302, M312",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 2187,
+      "char_end": 2268,
+      "quote": "Local transmit coilsmay be used,but should not be placed directly overthe\ndevice.",
+      "verified": true
+     },
+     {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "page": 8,
+      "char_start": 2272,
+      "char_end": 2311,
+      "quote": "Patient in supineor prone position only",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "Text layer drops spaces ('of1.5 T'); quotes are verbatim from the extracted text."
+  ]
+ }
+}

@@ -1,0 +1,1402 @@
+[
+ {
+  "doc_id": "synth-20261015-0000",
+  "style": "fda_table",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0001",
+  "style": "fda_table",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0002",
+  "style": "prose_sections",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0003",
+  "style": "status_only",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0004",
+  "style": "legacy_bullets",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0005",
+  "style": "fda_table",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0006",
+  "style": "prose_sections",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0007",
+  "style": "compact_inline",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0008",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0009",
+  "style": "compact_inline",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0010",
+  "style": "fda_columns",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0011",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0012",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0013",
+  "style": "compact_inline",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0014",
+  "style": "status_only",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0015",
+  "style": "legacy_bullets",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0016",
+  "style": "legacy_bullets",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0017",
+  "style": "legacy_bullets",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0018",
+  "style": "fda_columns",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0019",
+  "style": "prose_sections",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0020",
+  "style": "prose_sections",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0021",
+  "style": "status_only",
+  "device_type": "polymer suture anchor",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0022",
+  "style": "compact_inline",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0023",
+  "style": "compact_inline",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0024",
+  "style": "compact_inline",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0025",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0026",
+  "style": "fda_table",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0027",
+  "style": "prose_sections",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0028",
+  "style": "compact_inline",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0029",
+  "style": "legacy_bullets",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0030",
+  "style": "compact_inline",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0031",
+  "style": "prose_sections",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0032",
+  "style": "compact_inline",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0033",
+  "style": "prose_sections",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0034",
+  "style": "fda_columns",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0035",
+  "style": "legacy_bullets",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0036",
+  "style": "status_only",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0037",
+  "style": "status_only",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0038",
+  "style": "status_only",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0039",
+  "style": "legacy_bullets",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0040",
+  "style": "fda_table",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0041",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0042",
+  "style": "prose_sections",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0043",
+  "style": "status_only",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0044",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0045",
+  "style": "compact_inline",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0046",
+  "style": "fda_table",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0047",
+  "style": "fda_table",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0048",
+  "style": "compact_inline",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0049",
+  "style": "legacy_bullets",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0050",
+  "style": "status_only",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0051",
+  "style": "status_only",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0052",
+  "style": "fda_table",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0053",
+  "style": "fda_table",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0054",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0055",
+  "style": "compact_inline",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0056",
+  "style": "fda_table",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0057",
+  "style": "legacy_bullets",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0058",
+  "style": "legacy_bullets",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0059",
+  "style": "compact_inline",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0060",
+  "style": "compact_inline",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0061",
+  "style": "prose_sections",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0062",
+  "style": "prose_sections",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0063",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0064",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0065",
+  "style": "fda_table",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0066",
+  "style": "fda_columns",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0067",
+  "style": "compact_inline",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0068",
+  "style": "prose_sections",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0069",
+  "style": "fda_table",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0070",
+  "style": "prose_sections",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0071",
+  "style": "compact_inline",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0072",
+  "style": "prose_sections",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0073",
+  "style": "compact_inline",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0074",
+  "style": "compact_inline",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0075",
+  "style": "legacy_bullets",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0076",
+  "style": "compact_inline",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0077",
+  "style": "fda_table",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0078",
+  "style": "legacy_bullets",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0079",
+  "style": "prose_sections",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0080",
+  "style": "status_only",
+  "device_type": "polymer suture anchor",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0081",
+  "style": "status_only",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0082",
+  "style": "prose_sections",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0083",
+  "style": "legacy_bullets",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0084",
+  "style": "fda_table",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0085",
+  "style": "compact_inline",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0086",
+  "style": "fda_table",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0087",
+  "style": "status_only",
+  "device_type": "polymer suture anchor",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0088",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0089",
+  "style": "fda_columns",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0090",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0091",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0092",
+  "style": "status_only",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0093",
+  "style": "fda_columns",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0094",
+  "style": "legacy_bullets",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0095",
+  "style": "fda_columns",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0096",
+  "style": "legacy_bullets",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0097",
+  "style": "compact_inline",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0098",
+  "style": "fda_columns",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0099",
+  "style": "prose_sections",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0100",
+  "style": "fda_table",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0101",
+  "style": "compact_inline",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0102",
+  "style": "legacy_bullets",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0103",
+  "style": "prose_sections",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0104",
+  "style": "fda_table",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0105",
+  "style": "legacy_bullets",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0106",
+  "style": "status_only",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0107",
+  "style": "legacy_bullets",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0108",
+  "style": "fda_table",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0109",
+  "style": "legacy_bullets",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0110",
+  "style": "prose_sections",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0111",
+  "style": "status_only",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0112",
+  "style": "compact_inline",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0113",
+  "style": "prose_sections",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0114",
+  "style": "compact_inline",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0115",
+  "style": "legacy_bullets",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0116",
+  "style": "compact_inline",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0117",
+  "style": "status_only",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0118",
+  "style": "prose_sections",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0119",
+  "style": "legacy_bullets",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0120",
+  "style": "legacy_bullets",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0121",
+  "style": "prose_sections",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0122",
+  "style": "compact_inline",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0123",
+  "style": "fda_table",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0124",
+  "style": "status_only",
+  "device_type": "polymer suture anchor",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0125",
+  "style": "fda_columns",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0126",
+  "style": "fda_table",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0127",
+  "style": "legacy_bullets",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0128",
+  "style": "fda_table",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0129",
+  "style": "prose_sections",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0130",
+  "style": "fda_table",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0131",
+  "style": "prose_sections",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0132",
+  "style": "prose_sections",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0133",
+  "style": "status_only",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0134",
+  "style": "compact_inline",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0135",
+  "style": "fda_columns",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0136",
+  "style": "status_only",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0137",
+  "style": "fda_table",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0138",
+  "style": "legacy_bullets",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0139",
+  "style": "status_only",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0140",
+  "style": "compact_inline",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0141",
+  "style": "status_only",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0142",
+  "style": "fda_table",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0143",
+  "style": "prose_sections",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0144",
+  "style": "legacy_bullets",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0145",
+  "style": "fda_table",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0146",
+  "style": "legacy_bullets",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0147",
+  "style": "fda_columns",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0148",
+  "style": "fda_table",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0149",
+  "style": "fda_table",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0150",
+  "style": "prose_sections",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0151",
+  "style": "compact_inline",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0152",
+  "style": "legacy_bullets",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0153",
+  "style": "compact_inline",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0154",
+  "style": "status_only",
+  "device_type": "polymer suture anchor",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0155",
+  "style": "legacy_bullets",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0156",
+  "style": "prose_sections",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0157",
+  "style": "fda_table",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0158",
+  "style": "prose_sections",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0159",
+  "style": "compact_inline",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0160",
+  "style": "compact_inline",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0161",
+  "style": "fda_table",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0162",
+  "style": "fda_table",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0163",
+  "style": "legacy_bullets",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0164",
+  "style": "compact_inline",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0165",
+  "style": "legacy_bullets",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0166",
+  "style": "fda_columns",
+  "device_type": "intracranial aneurysm clip",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0167",
+  "style": "fda_table",
+  "device_type": "vena cava filter",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0168",
+  "style": "legacy_bullets",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0169",
+  "style": "fda_columns",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0170",
+  "style": "fda_table",
+  "device_type": "transcatheter heart valve",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0171",
+  "style": "compact_inline",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0172",
+  "style": "compact_inline",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0173",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0174",
+  "style": "status_only",
+  "device_type": "cochlear implant",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0175",
+  "style": "compact_inline",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0176",
+  "style": "compact_inline",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0177",
+  "style": "fda_columns",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0178",
+  "style": "status_only",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0179",
+  "style": "legacy_bullets",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0180",
+  "style": "prose_sections",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0181",
+  "style": "fda_table",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0182",
+  "style": "prose_sections",
+  "device_type": "cardiac pacing system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0183",
+  "style": "legacy_bullets",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0184",
+  "style": "compact_inline",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0185",
+  "style": "status_only",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0186",
+  "style": "compact_inline",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0187",
+  "style": "prose_sections",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": true
+ },
+ {
+  "doc_id": "synth-20261015-0188",
+  "style": "legacy_bullets",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0189",
+  "style": "compact_inline",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0190",
+  "style": "prose_sections",
+  "device_type": "implantable drug pump",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0191",
+  "style": "prose_sections",
+  "device_type": "orthopedic screw system",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0192",
+  "style": "fda_columns",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0193",
+  "style": "prose_sections",
+  "device_type": "embolization coil",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0194",
+  "style": "prose_sections",
+  "device_type": "coronary stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0195",
+  "style": "compact_inline",
+  "device_type": "peripheral stent",
+  "active": false,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0196",
+  "style": "status_only",
+  "device_type": "spinal cord stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0197",
+  "style": "status_only",
+  "device_type": "sacral neuromodulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0198",
+  "style": "legacy_bullets",
+  "device_type": "deep brain stimulation system",
+  "active": true,
+  "per_b0": false
+ },
+ {
+  "doc_id": "synth-20261015-0199",
+  "style": "prose_sections",
+  "device_type": "spinal fixation system",
+  "active": false,
+  "per_b0": false
+ }
+]

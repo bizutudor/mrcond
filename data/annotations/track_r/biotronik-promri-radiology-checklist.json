@@ -1,0 +1,157 @@
+{
+ "doc_id": "biotronik-promri-radiology-checklist",
+ "device_name": "ProMRI pacemaker / ICD systems",
+ "manufacturer": "BIOTRONIK",
+ "device_type": "cardiac pacemaker / ICD system",
+ "mr_status": {
+  "value": "Not stated",
+  "normalized_value": "Not stated"
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 245,
+      "char_end": 288,
+      "quote": "static magnetic field strength of 1.5 tesla",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "closed tube, cylindrical magnets",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 172,
+      "char_end": 237,
+      "quote": "Use a clinical MRI system with a closed tube, cylindrical magnets",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 291,
+      "char_end": 379,
+      "quote": "The slew rate of the MRI scanner’s gradient fields should not exceed 200 T/m/s per axis.",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 451,
+      "char_end": 558,
+      "quote": "The mean specific absorption rate for the whole body displayed by the MRI scanner must not exceed 2.0 W/kg.",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 3.2,
+    "unit": "W/kg",
+    "normalized_value": 3.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 560,
+      "char_end": 639,
+      "quote": "The head absorption rate displayed by the MRI scanner must not exceed 3.2 W/kg.",
+      "verified": true
+     }
+    ]
+   },
+   "device_configuration": {
+    "status": "EXTRACTED",
+    "value": "Programmed to MRI mode",
+    "normalized_value": "Programmed to MRI mode",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 57,
+      "char_end": 170,
+      "quote": "Confirm with the cardiology department that the pacemaker or ICD is programmed to MRI mode prior to the MRI scan.",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "Supine position; continuous monitoring; no abandoned leads/extenders/adaptors; other metal implants >5 cm at least 4 cm from the lead",
+    "normalized_value": "Supine position; continuous monitoring; no abandoned leads/extenders/adaptors; other metal implants >5 cm at least 4 cm from the lead",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 381,
+      "char_end": 449,
+      "quote": "The MR scan should be performed with the patient in supine position.",
+      "verified": true
+     },
+     {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "page": 2,
+      "char_start": 749,
+      "char_end": 819,
+      "quote": "Continuously monitor the patient’s condition during the entire MR scan",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "Checklist never labels the ProMRI system itself 'MR Conditional' (status not stated in this text)."
+  ]
+ }
+}

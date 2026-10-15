@@ -1,0 +1,202 @@
+{
+ "doc_id": "aesculap-neuro-plating-card",
+ "device_name": "Neuro Plating System (cranial fixation)",
+ "manufacturer": "Aesculap AG (B. Braun); system manufactured by Osteonic",
+ "device_type": "cranial fixation plates",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "aesculap-neuro-plating-card",
+    "page": 1,
+    "char_start": 48,
+    "char_end": 130,
+    "quote": "Non-clinical testing has demonstrated the Neuro Plating System is MR \nConditional.",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 235,
+      "char_end": 275,
+      "quote": "Static magnetic field of 1.5 T and 3.0 T",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 3000.0,
+    "unit": "gauss/cm",
+    "normalized_value": 30.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 278,
+      "char_end": 343,
+      "quote": "Maximum spatial magnetic field gradient of 3,000 gauss/cm (30T/m)",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode for gradient output",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 494,
+      "char_end": 535,
+      "quote": "Normal Operating Mode for gradient output",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 1.0,
+    "unit": "W/kg",
+    "normalized_value": 1.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 374,
+      "char_end": 491,
+      "quote": "whole body averaged specific absorption rate \n(SAR) of 1 W/kg and head SAR of 1 W/kg for landmarks above the shoulder",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 1.0,
+    "unit": "W/kg",
+    "normalized_value": 1.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 374,
+      "char_end": 491,
+      "quote": "whole body averaged specific absorption rate \n(SAR) of 1 W/kg and head SAR of 1 W/kg for landmarks above the shoulder",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 7.0,
+    "unit": "minutes",
+    "normalized_value": 7.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 717,
+      "char_end": 805,
+      "quote": "A cool down period of  \n5 minutes is needed after each 7 minutes of continuous scanning.",
+      "verified": true
+     }
+    ]
+   },
+   "wait_time_min": {
+    "status": "EXTRACTED",
+    "value": 5.0,
+    "unit": "minutes",
+    "normalized_value": 5.0,
+    "normalized_unit": "min",
+    "comparator": "ge",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 717,
+      "char_end": 805,
+      "quote": "A cool down period of  \n5 minutes is needed after each 7 minutes of continuous scanning.",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Landmarks above the shoulder",
+    "normalized_value": "Landmarks above the shoulder",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 374,
+      "char_end": 491,
+      "quote": "whole body averaged specific absorption rate \n(SAR) of 1 W/kg and head SAR of 1 W/kg for landmarks above the shoulder",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "mm",
+    "normalized_value": 2.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "aesculap-neuro-plating-card",
+      "page": 1,
+      "char_start": 832,
+      "char_end": 929,
+      "quote": "the image artifact caused by the device extends \napproximately 2 mm from the Neuro Plating System",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "The 7-minute limit and 5-minute cool-down are stated as requirements ('is needed').",
+   "Operating-mode statement refers to gradient output."
+  ]
+ }
+}

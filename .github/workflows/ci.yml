@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    env:
+      # No network access is needed: real-document fetching and live LLM tests are skipped
+      # unless these flags are set to 1.
+      MRCOND_NETWORK_TESTS: "0"
+      MRCOND_LIVE_LLM: "0"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: python -m pip install -e ".[dev,reports]" ruff==0.17.1
+      - name: Lint and formatting
+        run: |
+          ruff check .
+          ruff format --check .
+      - name: Unit, verifier, checker (incl. randomised oracle test) and API tests
+        run: python -m pytest
+      - name: Checker scenario suite (must report zero unsafe PASS)
+        run: mrcond scenarios
+      - name: Offline benchmark smoke run (Track S, rule extractors, replayed LLM outputs)
+        run: |
+          mrcond bench --tracks S --extractors rule rule+verifier --out /tmp/bench
+          if ls data/replay/*.jsonl >/dev/null 2>&1; then
+            for f in data/replay/*[!0-9].jsonl; do
+              tag=$(basename "$f" .jsonl)
+              mrcond bench --tracks S --extractors llm+verifier --llm-backend replay --llm-replay "$f" \
+                --llm-tag "$tag" --out "/tmp/bench-$tag"
+            done
+          fi
+
+  web:
+    name: Web UI
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npm run build

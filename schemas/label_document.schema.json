@@ -1,0 +1,450 @@
+{
+  "$defs": {
+    "ConditionSet": {
+      "additionalProperties": false,
+      "description": "One alternative set of MR Conditional conditions (e.g. per field strength).",
+      "properties": {
+        "set_id": {
+          "default": "cs1",
+          "title": "Set Id",
+          "type": "string"
+        },
+        "scope": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Free-text scope, e.g. 'Whole-body examinations'.",
+          "title": "Scope"
+        },
+        "b0_tesla": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "nucleus": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "scanner_type": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "b0_orientation": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "max_sfg_t_per_m": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "max_slew_rate_t_per_m_per_s": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "rf_excitation": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "transmit_coil": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "receive_coil": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "operating_mode": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "b1rms_max_uT": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "wb_sar_max_w_per_kg": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "head_sar_max_w_per_kg": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "sar_is_b1rms_fallback": {
+          "$ref": "#/$defs/FieldValue",
+          "description": "True when the labeling states SAR limits only apply if B1+rms is not available."
+        },
+        "max_active_scan_time_min": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "wait_time_min": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "scan_region_restrictions": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "device_configuration": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "artifact_extent_mm": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "other_conditions": {
+          "$ref": "#/$defs/FieldValue"
+        }
+      },
+      "title": "ConditionSet",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "Pointer to a short verbatim quote in a source document (page is 1-based).",
+      "properties": {
+        "doc_id": {
+          "title": "Doc Id",
+          "type": "string"
+        },
+        "page": {
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        },
+        "char_start": {
+          "description": "Offset of the quote in the page text (MRCond ingestion).",
+          "minimum": 0,
+          "title": "Char Start",
+          "type": "integer"
+        },
+        "char_end": {
+          "minimum": 0,
+          "title": "Char End",
+          "type": "integer"
+        },
+        "quote": {
+          "description": "Verbatim quote, at most 25 words.",
+          "title": "Quote",
+          "type": "string"
+        },
+        "verified": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Set by the verifier: quote found verbatim.",
+          "title": "Verified"
+        }
+      },
+      "required": [
+        "doc_id",
+        "page",
+        "char_start",
+        "char_end",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "FieldStatus": {
+      "enum": [
+        "EXTRACTED",
+        "NOT_STATED",
+        "NEEDS_REVIEW"
+      ],
+      "title": "FieldStatus",
+      "type": "string"
+    },
+    "FieldValue": {
+      "additionalProperties": false,
+      "description": "One labeled condition with evidence.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/FieldStatus",
+          "default": "NOT_STATED"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Value as stated in the labeling.",
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Unit as stated in the labeling.",
+          "title": "Unit"
+        },
+        "normalized_value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Value in the canonical unit.",
+          "title": "Normalized Value"
+        },
+        "normalized_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Unit"
+        },
+        "comparator": {
+          "anyOf": [
+            {
+              "enum": [
+                "le",
+                "ge",
+                "eq",
+                "in",
+                "any"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "le = upper limit, ge = lower limit, in = allowed set, eq = descriptive, any = explicitly unrestricted.",
+          "title": "Comparator"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "review_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Review Reasons",
+          "type": "array"
+        }
+      },
+      "title": "FieldValue",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "extractor": {
+          "description": "e.g. 'rule', 'llm:openai-compat:qwen2.5-1.5b', 'human'.",
+          "title": "Extractor",
+          "type": "string"
+        },
+        "verification": {
+          "default": "machine-extracted",
+          "enum": [
+            "machine-extracted",
+            "machine-verified",
+            "draft-unverified",
+            "human-verified"
+          ],
+          "title": "Verification",
+          "type": "string"
+        },
+        "annotator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Annotator"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        },
+        "created_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Created At"
+        },
+        "text_extractor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. 'pypdf 5.9.0'.",
+          "title": "Text Extractor"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "extractor"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "MRI safety labeling of one device, as extracted or annotated from one source document.",
+  "properties": {
+    "schema_version": {
+      "default": "0.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "doc_id": {
+      "title": "Doc Id",
+      "type": "string"
+    },
+    "device_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Device Name"
+    },
+    "manufacturer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Manufacturer"
+    },
+    "device_type": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Device Type"
+    },
+    "mr_status": {
+      "$ref": "#/$defs/FieldValue"
+    },
+    "condition_sets": {
+      "items": {
+        "$ref": "#/$defs/ConditionSet"
+      },
+      "title": "Condition Sets",
+      "type": "array"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    }
+  },
+  "required": [
+    "doc_id"
+  ],
+  "title": "LabelDocument",
+  "type": "object",
+  "$id": "urn:mrcond:schema:label_document:0.1.0"
+}

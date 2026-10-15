@@ -1,0 +1,301 @@
+{
+  "$defs": {
+    "ConditionCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "INSUFFICIENT_INFO",
+            "NEEDS_REVIEW"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "label_value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label Value"
+        },
+        "entered_value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Entered Value"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "label",
+        "status",
+        "reason"
+      ],
+      "title": "ConditionCheck",
+      "type": "object"
+    },
+    "ConditionSetResult": {
+      "additionalProperties": false,
+      "properties": {
+        "set_id": {
+          "title": "Set Id",
+          "type": "string"
+        },
+        "scope": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope"
+        },
+        "applicable": {
+          "title": "Applicable",
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "INSUFFICIENT_INFO",
+            "NEEDS_REVIEW"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "checks": {
+          "items": {
+            "$ref": "#/$defs/ConditionCheck"
+          },
+          "title": "Checks",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "set_id",
+        "applicable",
+        "status"
+      ],
+      "title": "ConditionSetResult",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "Pointer to a short verbatim quote in a source document (page is 1-based).",
+      "properties": {
+        "doc_id": {
+          "title": "Doc Id",
+          "type": "string"
+        },
+        "page": {
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        },
+        "char_start": {
+          "description": "Offset of the quote in the page text (MRCond ingestion).",
+          "minimum": 0,
+          "title": "Char Start",
+          "type": "integer"
+        },
+        "char_end": {
+          "minimum": 0,
+          "title": "Char End",
+          "type": "integer"
+        },
+        "quote": {
+          "description": "Verbatim quote, at most 25 words.",
+          "title": "Quote",
+          "type": "string"
+        },
+        "verified": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Set by the verifier: quote found verbatim.",
+          "title": "Verified"
+        }
+      },
+      "required": [
+        "doc_id",
+        "page",
+        "char_start",
+        "char_end",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "ImplantResult": {
+      "additionalProperties": false,
+      "properties": {
+        "implant_id": {
+          "title": "Implant Id",
+          "type": "string"
+        },
+        "device_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Device Name"
+        },
+        "mr_status": {
+          "title": "Mr Status",
+          "type": "string"
+        },
+        "verification": {
+          "title": "Verification",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "INSUFFICIENT_INFO",
+            "NEEDS_REVIEW"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "selected_set_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Selected Set Id"
+        },
+        "implant_checks": {
+          "items": {
+            "$ref": "#/$defs/ConditionCheck"
+          },
+          "title": "Implant Checks",
+          "type": "array"
+        },
+        "set_results": {
+          "items": {
+            "$ref": "#/$defs/ConditionSetResult"
+          },
+          "title": "Set Results",
+          "type": "array"
+        }
+      },
+      "required": [
+        "implant_id",
+        "mr_status",
+        "verification",
+        "status"
+      ],
+      "title": "ImplantResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "outcome": {
+      "enum": [
+        "NO_CONFLICT_FOUND",
+        "CONFLICT_FOUND",
+        "NEEDS_REVIEW"
+      ],
+      "title": "Outcome",
+      "type": "string"
+    },
+    "outcome_text": {
+      "title": "Outcome Text",
+      "type": "string"
+    },
+    "implants": {
+      "items": {
+        "$ref": "#/$defs/ImplantResult"
+      },
+      "title": "Implants",
+      "type": "array"
+    },
+    "disclaimer": {
+      "default": "Research prototype — not a medical device. Never use as the sole basis for an MRI safety decision. MRCond compares entered values with human-verified labeling excerpts and makes no safety determination. Every result requires review of the cited manufacturer labeling and sign-off by the MR Safety Officer/Expert.",
+      "title": "Disclaimer",
+      "type": "string"
+    },
+    "generated_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Generated At"
+    }
+  },
+  "required": [
+    "outcome",
+    "outcome_text",
+    "implants"
+  ],
+  "title": "CheckResult",
+  "type": "object",
+  "$id": "urn:mrcond:schema:check_result:0.1.0"
+}

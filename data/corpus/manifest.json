@@ -1,0 +1,497 @@
+{
+  "name": "MRCond Track R corpus manifest",
+  "version": "0.1.0",
+  "retrieved": "2026-10-15",
+  "policy": "Manufacturer documents are NOT redistributed. This manifest lists public URLs, retrieval dates, SHA-256 digests of the retrieved files and the relevant pages/sections. Run `mrcond fetch` to download them locally into data/raw/ (git-ignored). Annotations store only page numbers, character offsets and quotes of at most 25 words. US federal (FDA) documents are public domain. HTML pages are dynamic: their SHA-256 can change between fetches; annotation quotes are the anchor. Labels change over time - always use the current manufacturer labeling for clinical work.",
+  "documents": [
+    {
+      "doc_id": "fda-guidance-2023-t3",
+      "title": "FDA guidance 'Testing and Labeling Medical Devices for Safety in the MR Environment' (Oct 2023), Appendix 2, Table 3: example MR Conditional labeling of a passive implant",
+      "manufacturer": "U.S. FDA (example labeling)",
+      "device_name": "Star implant (fictional example)",
+      "device_type": "passive implant (example)",
+      "url": "https://www.fda.gov/media/74201/download",
+      "file": "fda-mr-guidance-2023.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "cc53fb71b57ab3df9abb9d6d81a2fd0f5c8b8bda8df60e315589f7132636e29b",
+      "pages": [
+        29
+      ],
+      "license": "US federal government work - public domain",
+      "redistributable": true,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "fda-guidance-2023-t4a",
+      "title": "FDA guidance (Oct 2023), Appendix 2, Table 4a: example labeling of an active implant, whole-body MR examinations",
+      "manufacturer": "U.S. FDA (example labeling)",
+      "device_name": "Star Active Implant System, whole-body exams (fictional example)",
+      "device_type": "active implant (example)",
+      "url": "https://www.fda.gov/media/74201/download",
+      "file": "fda-mr-guidance-2023.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "cc53fb71b57ab3df9abb9d6d81a2fd0f5c8b8bda8df60e315589f7132636e29b",
+      "pages": [
+        30
+      ],
+      "license": "US federal government work - public domain",
+      "redistributable": true,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "fda-guidance-2023-t4b",
+      "title": "FDA guidance (Oct 2023), Appendix 2, Table 4b: example labeling of an active implant, head MR examinations",
+      "manufacturer": "U.S. FDA (example labeling)",
+      "device_name": "Star Active Implant System, head exams (fictional example)",
+      "device_type": "active implant (example)",
+      "url": "https://www.fda.gov/media/74201/download",
+      "file": "fda-mr-guidance-2023.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "cc53fb71b57ab3df9abb9d6d81a2fd0f5c8b8bda8df60e315589f7132636e29b",
+      "pages": [
+        31
+      ],
+      "license": "US federal government work - public domain",
+      "redistributable": true,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "gore-tigris-mri-html",
+      "title": "GORE TIGRIS Vascular Stent - MRI Safety Information (web summary, US)",
+      "manufacturer": "W. L. Gore & Associates",
+      "device_name": "GORE TIGRIS Vascular Stent (discontinued)",
+      "device_type": "peripheral vascular stent",
+      "url": "https://www.goremedical.com/products/tigris/mri-safety",
+      "file": "gore-tigris-mri-safety.html",
+      "format": "html",
+      "retrieved": "2026-10-15",
+      "sha256": "22b98cd3bfe86c37f1bb4d44bbf14e33f3175b6812d7c8257fbeb13a449afd4a",
+      "section": {
+        "start": "This device is labeled as MR Conditional",
+        "end": "No restrictions listed in IFU"
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "gore-viabahn-mri-html-emea",
+      "title": "GORE VIABAHN Endoprosthesis - MRI Safety Information (web summary, EMEA)",
+      "manufacturer": "W. L. Gore & Associates",
+      "device_name": "GORE VIABAHN Endoprosthesis",
+      "device_type": "stent graft (endoprosthesis)",
+      "url": "https://www.goremedical.com/en-emea/products/viabahn/mri-safety",
+      "file": "gore-viabahn-mri-safety-emea.html",
+      "format": "html",
+      "retrieved": "2026-10-15",
+      "sha256": "1d46635d86e49bb44c32087b2f4b859f53206205700dc7740c7cb45b94efbe98",
+      "section": {
+        "start": "This device is labeled as MR Conditional",
+        "end": "Immediately after placement"
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "gore-viabahn-fortegra-card",
+      "title": "GORE VIABAHN FORTEGRA Venous Stent - patient information card (PMA labeling hosted by FDA, P250017C)",
+      "manufacturer": "W. L. Gore & Associates",
+      "device_name": "GORE VIABAHN FORTEGRA Venous Stent",
+      "device_type": "venous stent",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/P250017C.pdf",
+      "file": "fda-P250017C.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "e305f0eb7bbc74bb392610d7ec0eb42cce14c39f682bac246b79c5bc26dec24e",
+      "pages": [
+        1
+      ],
+      "license": "manufacturer labeling hosted on accessdata.fda.gov - treated as not redistributable",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "bsc-innova-stent-ifu",
+      "title": "Innova Self-Expanding Bare Metal Biliary/Vascular Stent System - instructions for use (PMA labeling hosted by FDA, P140028C), MRI safety section",
+      "manufacturer": "Boston Scientific",
+      "device_name": "Innova Stent",
+      "device_type": "peripheral self-expanding stent",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140028C.pdf",
+      "file": "fda-P140028C.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "652fa4e95a2767910f07edad1d9570c62fe901aa950de9536cd40843fdb182e6",
+      "pages": [
+        3,
+        4
+      ],
+      "section": {
+        "start": "MAGNETIC RESONANCE IMAGING (MRI) SAFETY INFORMATION",
+        "end": "artifact does obscure the device lumen."
+      },
+      "license": "manufacturer labeling hosted on accessdata.fda.gov - treated as not redistributable",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "bsc-promus-elite-mri-letter",
+      "title": "Promus ELITE Everolimus-Eluting Platinum Chromium Coronary Stent System - MRI safety excerpt (IC-142406-AB)",
+      "manufacturer": "Boston Scientific",
+      "device_name": "Promus ELITE Coronary Stent System",
+      "device_type": "coronary drug-eluting stent",
+      "url": "https://bostonscientific.com/content/dam/bostonscientific/Interventional%20Cardiology/portfolio-group/Stents/promus-elite/library/IC-537225-AB-promous-elite-mri-letter.pdf",
+      "file": "bsc-promus-elite-mri-letter.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "c330489c01900c2f1df00e8e63fea01c891adff9d2b9185b9d41cb75ce503e43",
+      "pages": [
+        1,
+        2
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "livanova-cphv-mri-us",
+      "title": "LivaNova MRI information for heart valve prostheses and annuloplasty devices (IM-01222 rev. C, USA), Table 2a: Carbomedics Prosthetic Heart Valve and Annuloflo",
+      "manufacturer": "LivaNova (Sorin Group Italia / LivaNova Canada)",
+      "device_name": "Carbomedics Prosthetic Heart Valve (CPHV) and Carbomedics Annuloflo",
+      "device_type": "mechanical heart valve / annuloplasty ring",
+      "url": "https://assets.livanova.com/media/com/products01/im-01222_c-ln-hv-mri-for-usa-_final__1.pdf?ext=.pdf",
+      "file": "livanova-hv-mri-usa.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "ad65dce500793d25d6c5770e2c22a711c81b6fd82889a585818ed47ca9096e39",
+      "pages": [
+        3
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "acumed-radial-head-mr",
+      "title": "Acumed Implants in the MR Environment (GEN70-56-A): Anatomic Radial Head System conditions",
+      "manufacturer": "Acumed",
+      "device_name": "Anatomic Radial Head System / Anatomic Radial Head Solutions (head and stem implants)",
+      "device_type": "orthopaedic implant (radial head prosthesis)",
+      "url": "https://www.acumed.net/wp-content/uploads/2020/06/Acumed-Implants-in-the-MR-Environment-GEN70-56-A.pdf",
+      "file": "acumed-implants-mr-environment.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "398213cf6e7a8177addb799faf8a1a5846a3e7d194927479fe9a53dfa7b7bec3",
+      "pages": [
+        6
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "Not stated",
+      "annotation_status": "draft-unverified",
+      "notes": "The text layer does not use the term 'MR Conditional' for this system (a symbol image may). The static-field row lists 3.0 T only, while SAR and scan-duration rows also mention 1.5 T; annotated conservatively as 3.0 T only."
+    },
+    {
+      "doc_id": "atricure-atriclip-implant-card",
+      "title": "AtriCure LAA Exclusion System (AtriClip) implant card leaflet IFU-0454.E, English MRI section",
+      "manufacturer": "AtriCure",
+      "device_name": "LAA Exclusion System Clip (AtriClip)",
+      "device_type": "left atrial appendage exclusion clip",
+      "url": "https://atricure.com/sites/default/files/devices-ifu/IFU-0454.E.pdf",
+      "file": "atricure-IFU-0454.E.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "59d4916906e2b3e5574e441a4ba930469cc19bf73ac0709fc8d4c9a7bb63949e",
+      "pages": [
+        1
+      ],
+      "section": {
+        "start": "The LAA Exclusion System Clip is MR Conditional.",
+        "end": "if the implant is located in the area of interest"
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "aesculap-neuro-plating-card",
+      "title": "Aesculap (B. Braun) neurosurgical implant card TA017018: Neuro Plating System section",
+      "manufacturer": "Aesculap AG (B. Braun); system manufactured by Osteonic",
+      "device_name": "Neuro Plating System (cranial fixation)",
+      "device_type": "cranial fixation plates",
+      "url": "https://www.bbraun.com/content/dam/b-braun/global/website/patients/hydrocephalus/TA017018_Implant_Passport_Neuro_2021-05.pdf",
+      "file": "bbraun-implant-passport-neuro.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "a12089e3fb91668de382348f6cc4a4831a86f450b4c3ac02ef1f201a1ad755a5",
+      "pages": [
+        1
+      ],
+      "section": {
+        "start": "Non-clinical testing has demonstrated the Neuro Plating System is MR",
+        "end": "a gradient echo pulse sequence and 3.0 T MRI system."
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "aesculap-yasargil-clip-card",
+      "title": "Aesculap (B. Braun) neurosurgical implant card TA017018: YASARGIL aneurysm clip section",
+      "manufacturer": "Aesculap AG (B. Braun)",
+      "device_name": "YASARGIL Titanium / Phynox aneurysm clip",
+      "device_type": "intracranial aneurysm clip",
+      "url": "https://www.bbraun.com/content/dam/b-braun/global/website/patients/hydrocephalus/TA017018_Implant_Passport_Neuro_2021-05.pdf",
+      "file": "bbraun-implant-passport-neuro.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "a12089e3fb91668de382348f6cc4a4831a86f450b4c3ac02ef1f201a1ad755a5",
+      "pages": [
+        1
+      ],
+      "section": {
+        "start": "Patients with a YASARGIL",
+        "end": "implanted clip."
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "Not stated",
+      "annotation_status": "draft-unverified",
+      "notes": "The card lists conditions but does not use the term 'MR Conditional' for the clip."
+    },
+    {
+      "doc_id": "bioretec-remeos-mri-html",
+      "title": "Bioretec RemeOs screw - MRI safety information (web page)",
+      "manufacturer": "Bioretec",
+      "device_name": "RemeOs Screw",
+      "device_type": "bioresorbable magnesium orthopaedic screw",
+      "url": "https://bioretec.com/remeos/mri-safety",
+      "file": "bioretec-remeos-mri-safety.html",
+      "format": "html",
+      "retrieved": "2026-10-15",
+      "sha256": "8cca2d43486f46323336f32dbbe9640f65a6efd95c22f1864ae84ea08e49240a",
+      "section": {
+        "start": "MRI SAFETY INFORMATION",
+        "end": "this can be repeated twice in 60 minutes."
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "title": "Medtronic Reveal LINQ ICM MRI conditions (web page, US)",
+      "manufacturer": "Medtronic",
+      "device_name": "Reveal LINQ insertable cardiac monitor",
+      "device_type": "insertable cardiac monitor",
+      "url": "https://www.medtronic.com/en-us/healthcare-professionals/mri-resources/reveal-linq-icm-mri-conditions.html",
+      "file": "medtronic-reveal-linq-mri-conditions.html",
+      "format": "html",
+      "retrieved": "2026-10-15",
+      "sha256": "1cebb8e7282e1aacefd222f3eb2643d78e23f84d00e59e465ac774a1ecc44da3",
+      "section": {
+        "start": "Reveal LINQ™ ICM is MR Conditional at 3.0 and 1.5 T",
+        "end": "for imaging of the head or extremities."
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "bsc-lux-dx-icm-mri-guide",
+      "title": "Boston Scientific ImageReady MR Conditional ICM System MRI technical guide (LUX-Dx, 51583242-001), MRI conditions of use",
+      "manufacturer": "Boston Scientific",
+      "device_name": "LUX-Dx / LUX-Dx II / LUX-Dx II+ insertable cardiac monitor",
+      "device_type": "insertable cardiac monitor",
+      "url": "https://www.bostonscientific.com/content/dam/elabeling/crm/51583242-001_IMAGEREADY_ICM_MRITG_en_S.pdf",
+      "file": "bsc-imageready-icm-mri-tg.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "b148f6198b58395d750fba2ceca95522c458aa3c2a071796298f44a7069d0cc2",
+      "pages": [
+        8,
+        9
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified",
+      "notes": "PDF text layer drops many spaces (e.g. 'MRConditional') - realistic extraction noise."
+    },
+    {
+      "doc_id": "biotronik-promri-radiology-checklist",
+      "title": "BIOTRONIK ProMRI Systems radiology checklist (FM040r3)",
+      "manufacturer": "BIOTRONIK",
+      "device_name": "ProMRI pacemaker / ICD systems",
+      "device_type": "cardiac pacemaker / ICD system",
+      "url": "https://www.biotronik.com/static/training/promri-clinician-training/presentation_content/external_files/radiology%20checklist.pdf",
+      "file": "biotronik-promri-radiology-checklist.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "068893f35b7b0c0bff0171d027ba83c136194680bdbe4dd5290102351fe67dad",
+      "pages": [
+        1,
+        2
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "Not stated",
+      "annotation_status": "draft-unverified",
+      "notes": "Checklist summarises conditions but never labels the ProMRI system itself 'MR Conditional'; full conditions are in the ProMRI technical manual."
+    },
+    {
+      "doc_id": "vivokey-spark2-mri",
+      "title": "VivoKey Spark 2 - MRI safety information (Shellock R&D Services labeling recommendation)",
+      "manufacturer": "VivoKey Technologies",
+      "device_name": "VivoKey Spark 2",
+      "device_type": "subdermal NFC transponder (non-medical implant)",
+      "url": "https://vivokey.com/wp-content/uploads/2022/12/Spark-2-MRI-Conditional-Statement.pdf",
+      "file": "vivokey-spark2-mri.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "f450893f5130aa0ae9edd965359517ec94fc2e0159cc2384f7636355f58bb75d",
+      "pages": [
+        1
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "abbott-mri-ready-pacing-manual",
+      "title": "St. Jude Medical (Abbott) MRI Ready Systems Manual - MR Conditional pacing system (60074732 A, AU)",
+      "manufacturer": "Abbott (St. Jude Medical)",
+      "device_name": "St. Jude Medical MR Conditional pacing system (Accent MRI / Assurity MRI / Endurity MRI / Endurity with Tendril MRI LPA1200M lead)",
+      "device_type": "cardiac pacemaker system",
+      "url": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/AU/en/60074732_A.PDF",
+      "file": "abbott-60074732-A.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "90078b6cf79031d1227b0d66ed1391a39d3e13c372b936700a716eae6086b0ca",
+      "pages": [
+        5,
+        6
+      ],
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified",
+      "notes": "Two scan parameter sets (A, B) depending on the generator/lead combination; the PDF text layer renders the 'less than or equal' sign as '¢'."
+    },
+    {
+      "doc_id": "cook-celect-platinum-ivc-ifu",
+      "title": "Cook Celect Platinum Vena Cava Filter Set - instructions for use (I-IGTCFS-US-1203-425-01), MRI information",
+      "manufacturer": "Cook Medical",
+      "device_name": "Celect Platinum Vena Cava Filter",
+      "device_type": "inferior vena cava filter",
+      "url": "https://ifu.cookmedical.com/data/IFU_PDF/I-IGTCFS-US-1203-425-01.PDF",
+      "file": "cook-I-IGTCFS-US-1203-425-01.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "663b960e153329e4be22f62cf5f89c3449309560b645e58b400be6c4922b2f07",
+      "pages": [
+        5
+      ],
+      "section": {
+        "start": "MRI INFORMATION",
+        "end": "for the presence of this metallic filter."
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified",
+      "notes": "Encrypted PDF (needs the 'cryptography' package for pypdf)."
+    },
+    {
+      "doc_id": "argon-option-elite-ivc-ifu",
+      "title": "Argon Medical Option ELITE Retrievable Vena Cava Filter - instructions for use (P-2017-0174-00 Rev M), MRI warning",
+      "manufacturer": "Argon Medical Devices",
+      "device_name": "Option ELITE Vena Cava Filter",
+      "device_type": "inferior vena cava filter",
+      "url": "https://www.argonmedical.com/wp-content/uploads/2025/05/P-2017-0174-00_Option-IFU-70cm-Rev-M.pdf",
+      "file": "argon-option-elite-ifu-70cm-rev-m.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "88bce7dadc02a035c2f61309241376124d294f969f37a5f3d3ed9d489833a6e2",
+      "pages": [
+        1
+      ],
+      "section": {
+        "start": "Non-clinical testing has demonstrated that the Option™ELITE Filter is MR Conditional.",
+        "end": "compensate for the presence of this metallic implant."
+      },
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "draft-unverified"
+    },
+    {
+      "doc_id": "nevro-senza-mri-guidelines",
+      "title": "Nevro 1.5 Tesla and 3 Tesla MRI Guidelines for the SENZA Neuromodulation Systems (11096 Rev Q, US)",
+      "manufacturer": "Nevro",
+      "device_name": "SENZA / SENZA II / SENZA Omnia spinal cord stimulation systems",
+      "device_type": "spinal cord stimulator",
+      "url": "https://s28.q4cdn.com/260621474/files/doc_downloads/physician_manual/2023/02/11096-Rev-Q_Nevro-MRI-Guidelines-for-Senza-Systems-(US)_Clean.pdf",
+      "file": "nevro-11096-rev-q-mri-guidelines.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "62d5d6b2994ae120f9f9436be71455bb59be42b4a757f676ad12d6ae34220ea8",
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "pending",
+      "notes": "Long multi-configuration manual (lead types, full-body vs head/extremity scans, exclusion zones). Not yet annotated."
+    },
+    {
+      "doc_id": "bsc-wavewriter-alpha-full-body",
+      "title": "Boston Scientific ImageReady MRI Full Body Guidelines for WaveWriter Alpha / Alpha Prime SCS (92583897-01 B)",
+      "manufacturer": "Boston Scientific",
+      "device_name": "WaveWriter Alpha / WaveWriter Alpha Prime spinal cord stimulator systems",
+      "device_type": "spinal cord stimulator",
+      "url": "https://bostonscientific.com/content/dam/elabeling/nm/92583897-01_B_MRI_Guidelines_for_WW_Alpha_en-US_s.pdf",
+      "file": "bsc-92583897-01-B-ww-alpha-mri.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "1c742144a1d73c2ee76064e5c179d33aaf962b9de236f37656d44b601d27e6f8",
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "pending",
+      "notes": "Not yet annotated."
+    },
+    {
+      "doc_id": "nevro-hfx-iq-mri-guidelines",
+      "title": "Nevro 1.5 Tesla and 3 Tesla MRI Guidelines - Senza HFX iQ System (10001162 Rev A, US)",
+      "manufacturer": "Nevro",
+      "device_name": "Senza HFX iQ spinal cord stimulation system",
+      "device_type": "spinal cord stimulator",
+      "url": "https://s28.q4cdn.com/260621474/files/doc_downloads/physician_manual/2022/10/10001162-Rev-A-Senza-HFX-iQ-System-1.5T-3T-MRI-Guidelines-(US)_Final.pdf",
+      "file": "nevro-10001162-rev-a-hfx-iq-mri.pdf",
+      "format": "pdf",
+      "retrieved": "2026-10-15",
+      "sha256": "d0f58865ae8a942ff8e62ae6e972f29fadd200399092b0838320c2f85d41e047",
+      "license": "manufacturer content - not redistributed",
+      "redistributable": false,
+      "status_expected": "MR Conditional",
+      "annotation_status": "pending",
+      "notes": "Not yet annotated."
+    }
+  ]
+}

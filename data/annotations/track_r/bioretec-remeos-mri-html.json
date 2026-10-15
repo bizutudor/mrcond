@@ -1,0 +1,200 @@
+{
+ "doc_id": "bioretec-remeos-mri-html",
+ "device_name": "RemeOs Screw",
+ "manufacturer": "Bioretec",
+ "device_type": "bioresorbable magnesium orthopaedic screw",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "bioretec-remeos-mri-html",
+    "page": 1,
+    "char_start": 54,
+    "char_end": 129,
+    "quote": "Non-clinical testing demonstrated that the RemeOs™ Screw is MR Conditional.",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 285,
+      "char_end": 334,
+      "quote": "Static Magnetic Field Strength (B0)\n\n1.5T or 3.0T",
+      "verified": true
+     }
+    ]
+   },
+   "rf_excitation": {
+    "status": "EXTRACTED",
+    "value": "Circularly Polarized (CP)",
+    "normalized_value": [
+     "CP"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 336,
+      "char_end": 376,
+      "quote": "RF Excitation\n\nCircularly Polarized (CP)",
+      "verified": true
+     }
+    ]
+   },
+   "transmit_coil": {
+    "status": "EXTRACTED",
+    "value": "Volume RF body coil",
+    "normalized_value": [
+     "body"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 378,
+      "char_end": 420,
+      "quote": "RF Transmit Coil Type\n\nVolume RF body coil",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 422,
+      "char_end": 459,
+      "quote": "Operating Mode\n\nNormal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 461,
+      "char_end": 515,
+      "quote": "Maximum Whole-Body SAR\n\n2 W/kg (Normal Operating Mode)",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 3.2,
+    "unit": "W/kg",
+    "normalized_value": 3.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 517,
+      "char_end": 542,
+      "quote": "Maximum Head SAR\n\n3.2W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 25.0,
+    "unit": "minutes",
+    "normalized_value": 25.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 594,
+      "char_end": 649,
+      "quote": "the\nimplant can be scanned continuously for\n25 minutes.",
+      "verified": true
+     }
+    ]
+   },
+   "wait_time_min": {
+    "status": "EXTRACTED",
+    "value": 5.0,
+    "unit": "minutes",
+    "normalized_value": 5.0,
+    "normalized_unit": "min",
+    "comparator": "ge",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 650,
+      "char_end": 713,
+      "quote": "With 5 minutes break, this\ncan be repeated twice in 60 minutes.",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "Repeat at most twice in 60 minutes",
+    "normalized_value": "Repeat at most twice in 60 minutes",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "bioretec-remeos-mri-html",
+      "page": 1,
+      "char_start": 650,
+      "char_end": 713,
+      "quote": "With 5 minutes break, this\ncan be repeated twice in 60 minutes.",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "beautifulsoup4 4.15.0",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold."
+  ]
+ }
+}

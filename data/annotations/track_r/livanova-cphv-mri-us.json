@@ -1,0 +1,144 @@
+{
+ "doc_id": "livanova-cphv-mri-us",
+ "device_name": "Carbomedics Prosthetic Heart Valve (CPHV) and Carbomedics Annuloflo",
+ "manufacturer": "LivaNova (Sorin Group Italia / LivaNova Canada)",
+ "device_type": "mechanical heart valve / annuloplasty ring",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "livanova-cphv-mri-us",
+    "page": 3,
+    "char_start": 25,
+    "char_end": 58,
+    "quote": "Table 2a: MR Conditional Products",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": 3.0,
+    "unit": "T",
+    "normalized_value": [
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "livanova-cphv-mri-us",
+      "page": 3,
+      "char_start": 617,
+      "char_end": 657,
+      "quote": "Static magnetic field of 3-Tesla or less",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 720.0,
+    "unit": "Gauss/cm",
+    "normalized_value": 7.2,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "livanova-cphv-mri-us",
+      "page": 3,
+      "char_start": 661,
+      "char_end": 725,
+      "quote": "Maximum spatial gradient magnetic field of \n720-Gauss/cm or less",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "livanova-cphv-mri-us",
+      "page": 3,
+      "char_start": 748,
+      "char_end": 838,
+      "quote": "Whole body averaged specific absorption rate (SAR) \nof 2-W/kg in the Normal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "livanova-cphv-mri-us",
+      "page": 3,
+      "char_start": 748,
+      "char_end": 838,
+      "quote": "Whole body averaged specific absorption rate (SAR) \nof 2-W/kg in the Normal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 15.0,
+    "unit": "minutes",
+    "normalized_value": 15.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "livanova-cphv-mri-us",
+      "page": 3,
+      "char_start": 937,
+      "char_end": 1015,
+      "quote": "physiological \nstress to PATIENTS) for 15 minutes (i.e., per pulse \nsequence).",
+      "verified": true
+     }
+    ]
+   },
+   "artifact_extent_mm": {
+    "status": "EXTRACTED",
+    "value": 10.0,
+    "unit": "mm",
+    "normalized_value": 10.0,
+    "normalized_unit": "mm",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "livanova-cphv-mri-us",
+      "page": 3,
+      "char_start": 1679,
+      "char_end": 1753,
+      "quote": "extends \napproximately 10-mm relative to the size and \nshape of the device",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold."
+  ]
+ }
+}

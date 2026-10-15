@@ -1,0 +1,5 @@
+mri_safety,count,percent,total_implantable_dis,retrieved,openfda_last_updated,query
+Labeling does not contain MRI Safety Information,901918,78.99,1141848,2026-10-15,2026-10-01,https://api.fda.gov/device/udi.json?search=gmdn_terms.implantable:true&count=mri_safety.exact
+MR Conditional,183726,16.09,1141848,2026-10-15,2026-10-01,https://api.fda.gov/device/udi.json?search=gmdn_terms.implantable:true&count=mri_safety.exact
+MR Safe,31129,2.73,1141848,2026-10-15,2026-10-01,https://api.fda.gov/device/udi.json?search=gmdn_terms.implantable:true&count=mri_safety.exact
+MR Unsafe,25075,2.2,1141848,2026-10-15,2026-10-01,https://api.fda.gov/device/udi.json?search=gmdn_terms.implantable:true&count=mri_safety.exact

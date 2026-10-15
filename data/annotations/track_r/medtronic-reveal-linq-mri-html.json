@@ -1,0 +1,217 @@
+{
+ "doc_id": "medtronic-reveal-linq-mri-html",
+ "device_name": "Reveal LINQ insertable cardiac monitor",
+ "manufacturer": "Medtronic",
+ "device_type": "insertable cardiac monitor",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "medtronic-reveal-linq-mri-html",
+    "page": 1,
+    "char_start": 3862,
+    "char_end": 3913,
+    "quote": "Reveal LINQ™ ICM is MR Conditional at 3.0 and 1.5 T",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5,
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5,
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4310,
+      "char_end": 4399,
+      "quote": "clinical MRI systems with a static magnetic field of 1.5 Tesla (T) or 3.0 T must be used.",
+      "verified": true
+     }
+    ]
+   },
+   "nucleus": {
+    "status": "EXTRACTED",
+    "value": "Hydrogen proton",
+    "normalized_value": [
+     "1H"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4401,
+      "char_end": 4444,
+      "quote": "Hydrogen proton MRI equipment must be used.",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "cylindrical bore",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4274,
+      "char_end": 4330,
+      "quote": "Horizontal cylindrical bore magnet, clinical MRI systems",
+      "verified": true
+     }
+    ]
+   },
+   "b0_orientation": {
+    "status": "EXTRACTED",
+    "value": "Horizontal",
+    "normalized_value": "horizontal",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4274,
+      "char_end": 4330,
+      "quote": "Horizontal cylindrical bore magnet, clinical MRI systems",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 25.0,
+    "unit": "T/m",
+    "normalized_value": 25.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4446,
+      "char_end": 4547,
+      "quote": "Maximum spatial gradient of the static magnetic field specification must be ≤25 T/m (2500 gauss/ cm).",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4582,
+      "char_end": 4643,
+      "quote": "gradient slew rate specification must be ≤200 T/m/s per axis.",
+      "verified": true
+     }
+    ]
+   },
+   "receive_coil": {
+    "status": "EXTRACTED",
+    "value": "no restrictions on receive-only coils",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4886,
+      "char_end": 4950,
+      "quote": "There are no restrictions on the placement of receive-only coils",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 4.0,
+    "unit": "W/kg",
+    "normalized_value": 4.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4645,
+      "char_end": 4744,
+      "quote": "The Whole Body Specific Absorption Rate (WB-SAR) as reported by the MRI equipment must be ≤4.0 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "head_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 3.2,
+    "unit": "W/kg",
+    "normalized_value": 3.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4746,
+      "char_end": 4810,
+      "quote": "the head SAR as reported by the MRI equipment must be ≤3.2 W/kg.",
+      "verified": true
+     }
+    ]
+   },
+   "other_conditions": {
+    "status": "EXTRACTED",
+    "value": "Do not use local transmit coils on the chest, trunk, or shoulder region",
+    "normalized_value": "Do not use local transmit coils on the chest, trunk, or shoulder region",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "medtronic-reveal-linq-mri-html",
+      "page": 1,
+      "char_start": 4812,
+      "char_end": 4884,
+      "quote": "Do not use local transmit coils on the chest, trunk, or shoulder region.",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "beautifulsoup4 4.15.0",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold.",
+   "Transmit-coil permission is location dependent (local transmit coils allowed for head/extremities only): recorded under other_conditions rather than as a permitted-coil list."
+  ]
+ }
+}

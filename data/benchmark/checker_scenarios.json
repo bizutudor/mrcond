@@ -1,0 +1,5631 @@
+{
+ "implants": {
+  "IMP-PASSIVE-STAR": {
+   "doc_id": "IMP-PASSIVE-STAR",
+   "device_name": "Passive implant (FDA Table 3 style)",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-PASSIVE-STAR",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5,
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5,
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 48,
+        "quote": "Static Magnetic Field Strength (B0) 1.5T or 3.0T",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "T/m",
+      "normalized_value": 30.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 54,
+        "quote": "Maximum Spatial Field Gradient 30 T/m (3,000 gauss/cm)",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "There are no Transmit Coil restrictions",
+      "normalized_value": [
+       "any"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "There are no Transmit Coil restrictions",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "W/kg",
+      "normalized_value": 2.0,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 29,
+        "quote": "Maximum Whole-Body SAR 2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "head_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 3.2,
+      "unit": "W/kg",
+      "normalized_value": 3.2,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 25,
+        "quote": "Maximum Head SAR 3.2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 60.0,
+      "unit": "min",
+      "normalized_value": 60.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "60 minutes of continuous RF",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-STAR-ACTIVE": {
+   "doc_id": "IMP-STAR-ACTIVE",
+   "device_name": "Active implant (FDA Tables 4a/4b style)",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-STAR-ACTIVE",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "set_id": "wb-1.5",
+     "scope": "Whole body, 1.5 T",
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 11,
+        "quote": "1.5T and 3T",
+        "verified": true
+       }
+      ]
+     },
+     "nucleus": {
+      "status": "EXTRACTED",
+      "value": "Type of Nuclei 31P (phosphorus)",
+      "normalized_value": [
+       "1H",
+       "31P"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "Type of Nuclei 31P (phosphorus)",
+        "verified": true
+       }
+      ]
+     },
+     "scanner_type": {
+      "status": "EXTRACTED",
+      "value": "MR Scanner Type Cylindrical",
+      "normalized_value": "cylindrical",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "MR Scanner Type Cylindrical",
+        "verified": true
+       }
+      ]
+     },
+     "b0_orientation": {
+      "status": "EXTRACTED",
+      "value": "B0 Field Orientation Horizontal",
+      "normalized_value": "horizontal",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "B0 Field Orientation Horizontal",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 25.0,
+      "unit": "T/m",
+      "normalized_value": 25.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 37,
+        "quote": "Maximum Spatial Field Gradient 25 T/m",
+        "verified": true
+       }
+      ]
+     },
+     "max_slew_rate_t_per_m_per_s": {
+      "status": "EXTRACTED",
+      "value": 200.0,
+      "unit": "T/m/s",
+      "normalized_value": 200.0,
+      "normalized_unit": "T/m/s",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 45,
+        "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "Integrated Whole Body Transmit Coil",
+      "normalized_value": [
+       "body"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 35,
+        "quote": "Integrated Whole Body Transmit Coil",
+        "verified": true
+       }
+      ]
+     },
+     "receive_coil": {
+      "status": "EXTRACTED",
+      "value": "RF Receive Coil Type Any",
+      "normalized_value": [
+       "any"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 24,
+        "quote": "RF Receive Coil Type Any",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "W/kg",
+      "normalized_value": 2.0,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 44,
+        "quote": "For 1.5T MR Scanner: Whole-Body SAR ≤ 2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Scan for up to 30 minutes.",
+        "verified": true
+       }
+      ]
+     },
+     "wait_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "ge",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 48,
+        "quote": "Wait 30 minutes before the next imaging session.",
+        "verified": true
+       }
+      ]
+     },
+     "scan_region_restrictions": {
+      "status": "EXTRACTED",
+      "value": "Any landmark is acceptable",
+      "normalized_value": "unrestricted",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Any landmark is acceptable",
+        "verified": true
+       }
+      ]
+     },
+     "device_configuration": {
+      "status": "EXTRACTED",
+      "value": "Device Configuration Stimulation OFF",
+      "normalized_value": "Stimulation OFF",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Device Configuration Stimulation OFF",
+        "verified": true
+       }
+      ]
+     }
+    },
+    {
+     "set_id": "wb-3",
+     "scope": "Whole body, 3 T",
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 11,
+        "quote": "1.5T and 3T",
+        "verified": true
+       }
+      ]
+     },
+     "nucleus": {
+      "status": "EXTRACTED",
+      "value": "Type of Nuclei 31P (phosphorus)",
+      "normalized_value": [
+       "1H",
+       "31P"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "Type of Nuclei 31P (phosphorus)",
+        "verified": true
+       }
+      ]
+     },
+     "scanner_type": {
+      "status": "EXTRACTED",
+      "value": "MR Scanner Type Cylindrical",
+      "normalized_value": "cylindrical",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "MR Scanner Type Cylindrical",
+        "verified": true
+       }
+      ]
+     },
+     "b0_orientation": {
+      "status": "EXTRACTED",
+      "value": "B0 Field Orientation Horizontal",
+      "normalized_value": "horizontal",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "B0 Field Orientation Horizontal",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 25.0,
+      "unit": "T/m",
+      "normalized_value": 25.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 37,
+        "quote": "Maximum Spatial Field Gradient 25 T/m",
+        "verified": true
+       }
+      ]
+     },
+     "max_slew_rate_t_per_m_per_s": {
+      "status": "EXTRACTED",
+      "value": 200.0,
+      "unit": "T/m/s",
+      "normalized_value": 200.0,
+      "normalized_unit": "T/m/s",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 45,
+        "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "Integrated Whole Body Transmit Coil",
+      "normalized_value": [
+       "body"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 35,
+        "quote": "Integrated Whole Body Transmit Coil",
+        "verified": true
+       }
+      ]
+     },
+     "receive_coil": {
+      "status": "EXTRACTED",
+      "value": "RF Receive Coil Type Any",
+      "normalized_value": [
+       "any"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 24,
+        "quote": "RF Receive Coil Type Any",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "b1rms_max_uT": {
+      "status": "EXTRACTED",
+      "value": 1.7,
+      "unit": "uT",
+      "normalized_value": 1.7,
+      "normalized_unit": "uT",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 34,
+        "quote": "For 3T MR Scanner: B1+rms ≤ 1.7 μT",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 1.2,
+      "unit": "W/kg",
+      "normalized_value": 1.2,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 47,
+        "quote": "do not report B1+rms, Whole-Body SAR ≤ 1.2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "sar_is_b1rms_fallback": {
+      "status": "EXTRACTED",
+      "value": "for MR scanners that do not report B1+rms",
+      "normalized_value": true,
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 41,
+        "quote": "for MR scanners that do not report B1+rms",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Scan for up to 30 minutes.",
+        "verified": true
+       }
+      ]
+     },
+     "wait_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "ge",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 48,
+        "quote": "Wait 30 minutes before the next imaging session.",
+        "verified": true
+       }
+      ]
+     },
+     "scan_region_restrictions": {
+      "status": "EXTRACTED",
+      "value": "Any landmark is acceptable",
+      "normalized_value": "unrestricted",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Any landmark is acceptable",
+        "verified": true
+       }
+      ]
+     },
+     "device_configuration": {
+      "status": "EXTRACTED",
+      "value": "Device Configuration Stimulation OFF",
+      "normalized_value": "Stimulation OFF",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Device Configuration Stimulation OFF",
+        "verified": true
+       }
+      ]
+     }
+    },
+    {
+     "set_id": "head",
+     "scope": "Head examinations",
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5,
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5,
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 11,
+        "quote": "1.5T and 3T",
+        "verified": true
+       }
+      ]
+     },
+     "nucleus": {
+      "status": "EXTRACTED",
+      "value": "Type of Nuclei 31P (phosphorus)",
+      "normalized_value": [
+       "1H",
+       "31P"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "Type of Nuclei 31P (phosphorus)",
+        "verified": true
+       }
+      ]
+     },
+     "scanner_type": {
+      "status": "EXTRACTED",
+      "value": "MR Scanner Type Cylindrical",
+      "normalized_value": "cylindrical",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "MR Scanner Type Cylindrical",
+        "verified": true
+       }
+      ]
+     },
+     "b0_orientation": {
+      "status": "EXTRACTED",
+      "value": "B0 Field Orientation Horizontal",
+      "normalized_value": "horizontal",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "B0 Field Orientation Horizontal",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 25.0,
+      "unit": "T/m",
+      "normalized_value": 25.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 37,
+        "quote": "Maximum Spatial Field Gradient 25 T/m",
+        "verified": true
+       }
+      ]
+     },
+     "max_slew_rate_t_per_m_per_s": {
+      "status": "EXTRACTED",
+      "value": 200.0,
+      "unit": "T/m/s",
+      "normalized_value": 200.0,
+      "normalized_unit": "T/m/s",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 45,
+        "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "Detachable Head Transmit/Receive Coil ONLY",
+      "normalized_value": [
+       "head"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 42,
+        "quote": "Detachable Head Transmit/Receive Coil ONLY",
+        "verified": true
+       }
+      ]
+     },
+     "receive_coil": {
+      "status": "EXTRACTED",
+      "value": "Detachable Head Transmit/Receive Coil ONLY",
+      "normalized_value": [
+       "head"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 42,
+        "quote": "Detachable Head Transmit/Receive Coil ONLY",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode or First Level",
+      "normalized_value": "first_level",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Normal Operating Mode or First Level",
+        "verified": true
+       }
+      ]
+     },
+     "head_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 3.2,
+      "unit": "W/kg",
+      "normalized_value": 3.2,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 25,
+        "quote": "Maximum Head SAR 3.2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": "no limit",
+      "comparator": "any",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 35,
+        "quote": "There is no limit on scan duration.",
+        "verified": true
+       }
+      ]
+     },
+     "scan_region_restrictions": {
+      "status": "EXTRACTED",
+      "value": "Scan Regions Head Only",
+      "normalized_value": "Head Only",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 22,
+        "quote": "Scan Regions Head Only",
+        "verified": true
+       }
+      ]
+     },
+     "device_configuration": {
+      "status": "EXTRACTED",
+      "value": "Device Configuration Stimulation OFF",
+      "normalized_value": "Stimulation OFF",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Device Configuration Stimulation OFF",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-ACTIVE-WB": {
+   "doc_id": "IMP-ACTIVE-WB",
+   "device_name": "Active implant, whole-body sets only",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-ACTIVE-WB",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "set_id": "wb-1.5",
+     "scope": "Whole body, 1.5 T",
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 11,
+        "quote": "1.5T and 3T",
+        "verified": true
+       }
+      ]
+     },
+     "nucleus": {
+      "status": "EXTRACTED",
+      "value": "Type of Nuclei 31P (phosphorus)",
+      "normalized_value": [
+       "1H",
+       "31P"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "Type of Nuclei 31P (phosphorus)",
+        "verified": true
+       }
+      ]
+     },
+     "scanner_type": {
+      "status": "EXTRACTED",
+      "value": "MR Scanner Type Cylindrical",
+      "normalized_value": "cylindrical",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "MR Scanner Type Cylindrical",
+        "verified": true
+       }
+      ]
+     },
+     "b0_orientation": {
+      "status": "EXTRACTED",
+      "value": "B0 Field Orientation Horizontal",
+      "normalized_value": "horizontal",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "B0 Field Orientation Horizontal",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 25.0,
+      "unit": "T/m",
+      "normalized_value": 25.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 37,
+        "quote": "Maximum Spatial Field Gradient 25 T/m",
+        "verified": true
+       }
+      ]
+     },
+     "max_slew_rate_t_per_m_per_s": {
+      "status": "EXTRACTED",
+      "value": 200.0,
+      "unit": "T/m/s",
+      "normalized_value": 200.0,
+      "normalized_unit": "T/m/s",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 45,
+        "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "Integrated Whole Body Transmit Coil",
+      "normalized_value": [
+       "body"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 35,
+        "quote": "Integrated Whole Body Transmit Coil",
+        "verified": true
+       }
+      ]
+     },
+     "receive_coil": {
+      "status": "EXTRACTED",
+      "value": "RF Receive Coil Type Any",
+      "normalized_value": [
+       "any"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 24,
+        "quote": "RF Receive Coil Type Any",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "W/kg",
+      "normalized_value": 2.0,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 44,
+        "quote": "For 1.5T MR Scanner: Whole-Body SAR ≤ 2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Scan for up to 30 minutes.",
+        "verified": true
+       }
+      ]
+     },
+     "wait_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "ge",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 48,
+        "quote": "Wait 30 minutes before the next imaging session.",
+        "verified": true
+       }
+      ]
+     },
+     "scan_region_restrictions": {
+      "status": "EXTRACTED",
+      "value": "Any landmark is acceptable",
+      "normalized_value": "unrestricted",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Any landmark is acceptable",
+        "verified": true
+       }
+      ]
+     },
+     "device_configuration": {
+      "status": "EXTRACTED",
+      "value": "Device Configuration Stimulation OFF",
+      "normalized_value": "Stimulation OFF",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Device Configuration Stimulation OFF",
+        "verified": true
+       }
+      ]
+     }
+    },
+    {
+     "set_id": "wb-3",
+     "scope": "Whole body, 3 T",
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 11,
+        "quote": "1.5T and 3T",
+        "verified": true
+       }
+      ]
+     },
+     "nucleus": {
+      "status": "EXTRACTED",
+      "value": "Type of Nuclei 31P (phosphorus)",
+      "normalized_value": [
+       "1H",
+       "31P"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "Type of Nuclei 31P (phosphorus)",
+        "verified": true
+       }
+      ]
+     },
+     "scanner_type": {
+      "status": "EXTRACTED",
+      "value": "MR Scanner Type Cylindrical",
+      "normalized_value": "cylindrical",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "MR Scanner Type Cylindrical",
+        "verified": true
+       }
+      ]
+     },
+     "b0_orientation": {
+      "status": "EXTRACTED",
+      "value": "B0 Field Orientation Horizontal",
+      "normalized_value": "horizontal",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "B0 Field Orientation Horizontal",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 25.0,
+      "unit": "T/m",
+      "normalized_value": 25.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 37,
+        "quote": "Maximum Spatial Field Gradient 25 T/m",
+        "verified": true
+       }
+      ]
+     },
+     "max_slew_rate_t_per_m_per_s": {
+      "status": "EXTRACTED",
+      "value": 200.0,
+      "unit": "T/m/s",
+      "normalized_value": 200.0,
+      "normalized_unit": "T/m/s",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 45,
+        "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "Integrated Whole Body Transmit Coil",
+      "normalized_value": [
+       "body"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 35,
+        "quote": "Integrated Whole Body Transmit Coil",
+        "verified": true
+       }
+      ]
+     },
+     "receive_coil": {
+      "status": "EXTRACTED",
+      "value": "RF Receive Coil Type Any",
+      "normalized_value": [
+       "any"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 24,
+        "quote": "RF Receive Coil Type Any",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "b1rms_max_uT": {
+      "status": "EXTRACTED",
+      "value": 1.7,
+      "unit": "uT",
+      "normalized_value": 1.7,
+      "normalized_unit": "uT",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 34,
+        "quote": "For 3T MR Scanner: B1+rms ≤ 1.7 μT",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 1.2,
+      "unit": "W/kg",
+      "normalized_value": 1.2,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 47,
+        "quote": "do not report B1+rms, Whole-Body SAR ≤ 1.2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "sar_is_b1rms_fallback": {
+      "status": "EXTRACTED",
+      "value": "for MR scanners that do not report B1+rms",
+      "normalized_value": true,
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 41,
+        "quote": "for MR scanners that do not report B1+rms",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Scan for up to 30 minutes.",
+        "verified": true
+       }
+      ]
+     },
+     "wait_time_min": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "min",
+      "normalized_value": 30.0,
+      "normalized_unit": "min",
+      "comparator": "ge",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 48,
+        "quote": "Wait 30 minutes before the next imaging session.",
+        "verified": true
+       }
+      ]
+     },
+     "scan_region_restrictions": {
+      "status": "EXTRACTED",
+      "value": "Any landmark is acceptable",
+      "normalized_value": "unrestricted",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 26,
+        "quote": "Any landmark is acceptable",
+        "verified": true
+       }
+      ]
+     },
+     "device_configuration": {
+      "status": "EXTRACTED",
+      "value": "Device Configuration Stimulation OFF",
+      "normalized_value": "Stimulation OFF",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Device Configuration Stimulation OFF",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-ACTIVE-HEAD": {
+   "doc_id": "IMP-ACTIVE-HEAD",
+   "device_name": "Active implant, head-only set",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-ACTIVE-HEAD",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "set_id": "head",
+     "scope": "Head examinations",
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5,
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5,
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 11,
+        "quote": "1.5T and 3T",
+        "verified": true
+       }
+      ]
+     },
+     "nucleus": {
+      "status": "EXTRACTED",
+      "value": "Type of Nuclei 31P (phosphorus)",
+      "normalized_value": [
+       "1H",
+       "31P"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "Type of Nuclei 31P (phosphorus)",
+        "verified": true
+       }
+      ]
+     },
+     "scanner_type": {
+      "status": "EXTRACTED",
+      "value": "MR Scanner Type Cylindrical",
+      "normalized_value": "cylindrical",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "MR Scanner Type Cylindrical",
+        "verified": true
+       }
+      ]
+     },
+     "b0_orientation": {
+      "status": "EXTRACTED",
+      "value": "B0 Field Orientation Horizontal",
+      "normalized_value": "horizontal",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 31,
+        "quote": "B0 Field Orientation Horizontal",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 25.0,
+      "unit": "T/m",
+      "normalized_value": 25.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 37,
+        "quote": "Maximum Spatial Field Gradient 25 T/m",
+        "verified": true
+       }
+      ]
+     },
+     "max_slew_rate_t_per_m_per_s": {
+      "status": "EXTRACTED",
+      "value": 200.0,
+      "unit": "T/m/s",
+      "normalized_value": 200.0,
+      "normalized_unit": "T/m/s",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 45,
+        "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "Detachable Head Transmit/Receive Coil ONLY",
+      "normalized_value": [
+       "head"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 42,
+        "quote": "Detachable Head Transmit/Receive Coil ONLY",
+        "verified": true
+       }
+      ]
+     },
+     "receive_coil": {
+      "status": "EXTRACTED",
+      "value": "Detachable Head Transmit/Receive Coil ONLY",
+      "normalized_value": [
+       "head"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 42,
+        "quote": "Detachable Head Transmit/Receive Coil ONLY",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode or First Level",
+      "normalized_value": "first_level",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Normal Operating Mode or First Level",
+        "verified": true
+       }
+      ]
+     },
+     "head_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 3.2,
+      "unit": "W/kg",
+      "normalized_value": 3.2,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 25,
+        "quote": "Maximum Head SAR 3.2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": "no limit",
+      "comparator": "any",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 35,
+        "quote": "There is no limit on scan duration.",
+        "verified": true
+       }
+      ]
+     },
+     "scan_region_restrictions": {
+      "status": "EXTRACTED",
+      "value": "Scan Regions Head Only",
+      "normalized_value": "Head Only",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 22,
+        "quote": "Scan Regions Head Only",
+        "verified": true
+       }
+      ]
+     },
+     "device_configuration": {
+      "status": "EXTRACTED",
+      "value": "Device Configuration Stimulation OFF",
+      "normalized_value": "Stimulation OFF",
+      "comparator": "eq",
+      "evidence": [
+       {
+        "doc_id": "IMP-STAR-ACTIVE",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 36,
+        "quote": "Device Configuration Stimulation OFF",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-LEGACY-3T": {
+   "doc_id": "IMP-LEGACY-3T",
+   "device_name": "Legacy passive implant",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-LEGACY-3T",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-LEGACY-3T",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 40,
+        "quote": "Static magnetic field of 3-Tesla or less",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 7.2,
+      "unit": "T/m",
+      "normalized_value": 7.2,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-LEGACY-3T",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 63,
+        "quote": "Maximum spatial gradient magnetic field of 720-Gauss/cm or less",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-LEGACY-3T",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "W/kg",
+      "normalized_value": 2.0,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-LEGACY-3T",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 33,
+        "quote": "whole body averaged SAR of 2-W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 15.0,
+      "unit": "min",
+      "normalized_value": 15.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-LEGACY-3T",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 53,
+        "quote": "for 15 minutes of scanning (i.e., per pulse sequence)",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-UNSAFE": {
+   "doc_id": "IMP-UNSAFE",
+   "device_name": "MR Unsafe device",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Unsafe",
+    "normalized_value": "MR Unsafe",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-UNSAFE",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 24,
+      "quote": "The device is MR Unsafe.",
+      "verified": true
+     }
+    ]
+   },
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-SAFE": {
+   "doc_id": "IMP-SAFE",
+   "device_name": "MR Safe device",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Safe",
+    "normalized_value": "MR Safe",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-SAFE",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 22,
+      "quote": "The device is MR Safe.",
+      "verified": true
+     }
+    ]
+   },
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-NOTSTATED": {
+   "doc_id": "IMP-NOTSTATED",
+   "device_name": "Device without MR status",
+   "device_type": "synthetic scenario implant",
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-DRAFT": {
+   "doc_id": "IMP-DRAFT",
+   "device_name": "Passive implant (FDA Table 3 style)",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-PASSIVE-STAR",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5,
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5,
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 48,
+        "quote": "Static Magnetic Field Strength (B0) 1.5T or 3.0T",
+        "verified": true
+       }
+      ]
+     },
+     "max_sfg_t_per_m": {
+      "status": "EXTRACTED",
+      "value": 30.0,
+      "unit": "T/m",
+      "normalized_value": 30.0,
+      "normalized_unit": "T/m",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 54,
+        "quote": "Maximum Spatial Field Gradient 30 T/m (3,000 gauss/cm)",
+        "verified": true
+       }
+      ]
+     },
+     "rf_excitation": {
+      "status": "EXTRACTED",
+      "value": "RF Excitation Circularly Polarized (CP)",
+      "normalized_value": [
+       "CP"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "RF Excitation Circularly Polarized (CP)",
+        "verified": true
+       }
+      ]
+     },
+     "transmit_coil": {
+      "status": "EXTRACTED",
+      "value": "There are no Transmit Coil restrictions",
+      "normalized_value": [
+       "any"
+      ],
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 39,
+        "quote": "There are no Transmit Coil restrictions",
+        "verified": true
+       }
+      ]
+     },
+     "operating_mode": {
+      "status": "EXTRACTED",
+      "value": "Normal Operating Mode",
+      "normalized_value": "normal",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 21,
+        "quote": "Normal Operating Mode",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "W/kg",
+      "normalized_value": 2.0,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 29,
+        "quote": "Maximum Whole-Body SAR 2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "head_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 3.2,
+      "unit": "W/kg",
+      "normalized_value": 3.2,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 25,
+        "quote": "Maximum Head SAR 3.2 W/kg",
+        "verified": true
+       }
+      ]
+     },
+     "max_active_scan_time_min": {
+      "status": "EXTRACTED",
+      "value": 60.0,
+      "unit": "min",
+      "normalized_value": 60.0,
+      "normalized_unit": "min",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-PASSIVE-STAR",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 27,
+        "quote": "60 minutes of continuous RF",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "draft-unverified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-NO-RF": {
+   "doc_id": "IMP-NO-RF",
+   "device_name": "Conditional label without RF condition",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-NO-RF",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       1.5
+      ],
+      "unit": "T",
+      "normalized_value": [
+       1.5
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-NO-RF",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 10,
+        "quote": "1.5 T only",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-B1-ONLY": {
+   "doc_id": "IMP-B1-ONLY",
+   "device_name": "3 T label with B1+rms limit only",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-B1-ONLY",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-B1-ONLY",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 8,
+        "quote": "3 T only",
+        "verified": true
+       }
+      ]
+     },
+     "b1rms_max_uT": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "uT",
+      "normalized_value": 2.0,
+      "normalized_unit": "uT",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-B1-ONLY",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 15,
+        "quote": "B1+rms ≤ 2.0 µT",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  },
+  "IMP-SAR-INDEP": {
+   "doc_id": "IMP-SAR-INDEP",
+   "device_name": "3 T label with independent B1+rms and SAR limits",
+   "device_type": "synthetic scenario implant",
+   "mr_status": {
+    "status": "EXTRACTED",
+    "value": "MR Conditional",
+    "normalized_value": "MR Conditional",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "IMP-SAR-INDEP",
+      "page": 1,
+      "char_start": 0,
+      "char_end": 29,
+      "quote": "The device is MR Conditional.",
+      "verified": true
+     }
+    ]
+   },
+   "condition_sets": [
+    {
+     "b0_tesla": {
+      "status": "EXTRACTED",
+      "value": [
+       3.0
+      ],
+      "unit": "T",
+      "normalized_value": [
+       3.0
+      ],
+      "normalized_unit": "T",
+      "comparator": "in",
+      "evidence": [
+       {
+        "doc_id": "IMP-SAR-INDEP",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 8,
+        "quote": "3 T only",
+        "verified": true
+       }
+      ]
+     },
+     "b1rms_max_uT": {
+      "status": "EXTRACTED",
+      "value": 2.0,
+      "unit": "uT",
+      "normalized_value": 2.0,
+      "normalized_unit": "uT",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-SAR-INDEP",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 15,
+        "quote": "B1+rms ≤ 2.0 µT",
+        "verified": true
+       }
+      ]
+     },
+     "wb_sar_max_w_per_kg": {
+      "status": "EXTRACTED",
+      "value": 1.0,
+      "unit": "W/kg",
+      "normalized_value": 1.0,
+      "normalized_unit": "W/kg",
+      "comparator": "le",
+      "evidence": [
+       {
+        "doc_id": "IMP-SAR-INDEP",
+        "page": 1,
+        "char_start": 0,
+        "char_end": 29,
+        "quote": "and whole-body SAR ≤ 1.0 W/kg",
+        "verified": true
+       }
+      ]
+     }
+    }
+   ],
+   "provenance": {
+    "extractor": "scenario-fixture",
+    "verification": "human-verified",
+    "reviewer": "scenario fixture"
+   }
+  }
+ },
+ "scenarios": [
+  {
+   "id": "star-base-1.5T",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "all conditions met",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-base-3T",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "3 T also permitted",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-b0-0.55T",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-0.55T",
+    "name": "Generic 0.55 T closed bore",
+    "b0_tesla": 0.55,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "field strength not labeled",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "b0_tesla": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-wbsar-over",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 2.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "WB SAR 2.5 > 2",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "wb_sar_max_w_per_kg": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-wbsar-equal",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 2.0,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "limit is inclusive",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-headsar-over",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.0,
+      "head_sar_w_per_kg": 3.3
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "head SAR 3.3 > 3.2",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "head_sar_max_w_per_kg": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-headsar-missing",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.0,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "head SAR not entered",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "head_sar_max_w_per_kg": "INSUFFICIENT_INFO"
+    }
+   }
+  },
+  {
+   "id": "star-mode-firstlevel",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "first_level",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "Normal mode required",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "operating_mode": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-mode-missing",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": null,
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "operating mode not entered",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "operating_mode": "INSUFFICIENT_INFO"
+    }
+   }
+  },
+  {
+   "id": "star-time-over",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 70,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "70 > 60 min",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "max_active_scan_time_min": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-time-missing",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": null,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "scan time not entered",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-sfg-missing",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": null
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "spatial field gradient position question -> needs review",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "max_sfg_t_per_m": "NEEDS_REVIEW"
+    }
+   }
+  },
+  {
+   "id": "star-sfg-over",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 35
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "35 > 30 T/m",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "max_sfg_t_per_m": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-sfg-equal",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 30
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "inclusive SFG limit",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-excitation-mc2",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "MC-2",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "CP only",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "rf_excitation": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-excitation-missing",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": null,
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "excitation not entered",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-headcoil",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "head",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "no transmit coil restriction",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-no-sequences",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "no RF values entered",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-nucleus-31P",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "31P",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "only 1H implied when nucleus not listed",
+   "expect_fields": {
+    "IMP-PASSIVE-STAR": {
+     "nucleus": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "star-two-seq-one-over",
+   "implants": [
+    "IMP-PASSIVE-STAR"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "t1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.0,
+      "head_sar_w_per_kg": 1.0
+     },
+     {
+      "name": "dwi",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 2.2,
+      "head_sar_w_per_kg": 1.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "one sequence over the WB SAR limit",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-base",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "B1+rms within limit, SAR fallback not needed",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-b1-over",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.8,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "1.8 > 1.7 uT",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "b1rms_max_uT": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "act3-b1-equal",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.7,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "inclusive B1+rms limit",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-fallback-ok",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.1,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "no B1+rms -> SAR fallback 1.1 <= 1.2",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-fallback-over",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.3,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "fallback SAR 1.3 > 1.2",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "b1rms_max_uT": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "act3-no-rf-values",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "neither B1+rms nor SAR entered",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "b1rms_max_uT": "INSUFFICIENT_INFO"
+    }
+   }
+  },
+  {
+   "id": "act3-both-reported-sar-over",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "conservative: when both are reported both are checked",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "wb_sar_max_w_per_kg": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "act3-slew-over",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 220.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "scanner slew 220 > 200",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "max_slew_rate_t_per_m_per_s": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "act3-slew-limited",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 220.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine",
+    "slew_rate_limit_t_per_m_per_s": 150.0
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "protocol limits slew rate to 150",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-slew-unknown",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": null,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "slew rate unknown",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-headcoil",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "head",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "body transmit coil only",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "transmit_coil": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "act3-receive-any",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "head",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "any receive coil",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-config-unconfirmed",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": null,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "Stimulation OFF not confirmed",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "device_configuration": "INSUFFICIENT_INFO"
+    }
+   }
+  },
+  {
+   "id": "act3-time-over",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 35,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "35 > 30 min",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-two-sessions-short-wait",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine",
+    "sessions": 2,
+    "wait_between_sessions_min": 20
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "wait 20 < 30 min",
+   "expect_fields": {
+    "IMP-ACTIVE-WB": {
+     "wait_time_min": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "act3-two-sessions-wait-ok",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine",
+    "sessions": 2,
+    "wait_between_sessions_min": 30
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "wait 30 min",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-two-sessions-wait-missing",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine",
+    "sessions": 2
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "wait not entered",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-nucleus-31P",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "31P",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "31P listed",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-nucleus-23Na",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "23Na",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "23Na not listed",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-open-scanner",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "open",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "cylindrical required",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-vertical-b0",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "vertical",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "horizontal B0 required",
+   "expect_fields": {}
+  },
+  {
+   "id": "act3-orientation-unknown",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": null,
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "orientation not entered",
+   "expect_fields": {}
+  },
+  {
+   "id": "act15-base",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.8,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "1.5 T whole-body SAR 1.8 <= 2",
+   "expect_fields": {}
+  },
+  {
+   "id": "act15-wbsar-over",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 2.1,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "2.1 > 2 W/kg",
+   "expect_fields": {}
+  },
+  {
+   "id": "act15-only-b1",
+   "implants": [
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 2.0,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "1.5 T set has an independent SAR limit; B1+rms alone is insufficient",
+   "expect_fields": {}
+  },
+  {
+   "id": "head-base",
+   "implants": [
+    "IMP-ACTIVE-HEAD"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "first_level",
+    "transmit_coil": "head",
+    "receive_coil": "head",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": 3.0
+     }
+    ],
+    "total_active_scan_time_min": 50,
+    "sfg_at_implant_t_per_m": 5,
+    "device_configuration_confirmed": true,
+    "scan_region": "head"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "scan region 'Head Only' always needs human review",
+   "expect_fields": {
+    "IMP-ACTIVE-HEAD": {
+     "scan_region_restrictions": "NEEDS_REVIEW"
+    }
+   }
+  },
+  {
+   "id": "head-bodycoil",
+   "implants": [
+    "IMP-ACTIVE-HEAD"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "first_level",
+    "transmit_coil": "body",
+    "receive_coil": "head",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": 3.0
+     }
+    ],
+    "total_active_scan_time_min": 50,
+    "sfg_at_implant_t_per_m": 5,
+    "device_configuration_confirmed": true,
+    "scan_region": "head"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "head T/R coil only",
+   "expect_fields": {}
+  },
+  {
+   "id": "head-headsar-over",
+   "implants": [
+    "IMP-ACTIVE-HEAD"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "first_level",
+    "transmit_coil": "head",
+    "receive_coil": "head",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": 3.3
+     }
+    ],
+    "total_active_scan_time_min": 50,
+    "sfg_at_implant_t_per_m": 5,
+    "device_configuration_confirmed": true,
+    "scan_region": "head"
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "3.3 > 3.2 W/kg",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-active-head-scan",
+   "implants": [
+    "IMP-STAR-ACTIVE"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "first_level",
+    "transmit_coil": "head",
+    "receive_coil": "head",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": 3.0
+     }
+    ],
+    "total_active_scan_time_min": 50,
+    "sfg_at_implant_t_per_m": 5,
+    "device_configuration_confirmed": true,
+    "scan_region": "head"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "whole-body sets fail, head set applies -> region review",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-active-body-scan",
+   "implants": [
+    "IMP-STAR-ACTIVE"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "3 T whole-body set applies",
+   "expect_fields": {}
+  },
+  {
+   "id": "star-active-body-scan-1.5",
+   "implants": [
+    "IMP-STAR-ACTIVE"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.8,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "1.5 T whole-body set applies",
+   "expect_fields": {}
+  },
+  {
+   "id": "legacy-3T",
+   "implants": [
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.9,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 10,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "3 T or less",
+   "expect_fields": {}
+  },
+  {
+   "id": "legacy-1.5T",
+   "implants": [
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.9,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 10,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "1.5 T <= 3 T",
+   "expect_fields": {}
+  },
+  {
+   "id": "legacy-7T",
+   "implants": [
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-7T",
+    "name": "Generic 7 T closed bore",
+    "b0_tesla": 7.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.9,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 10,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "7 T > 3 T",
+   "expect_fields": {
+    "IMP-LEGACY-3T": {
+     "b0_tesla": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "legacy-wbsar-over",
+   "implants": [
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 2.5,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 10,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "2.5 > 2 W/kg",
+   "expect_fields": {}
+  },
+  {
+   "id": "legacy-time-over",
+   "implants": [
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.9,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 20,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "20 > 15 min",
+   "expect_fields": {}
+  },
+  {
+   "id": "legacy-sfg-over",
+   "implants": [
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.9,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 10,
+    "sfg_at_implant_t_per_m": 8.0
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "8 > 7.2 T/m",
+   "expect_fields": {}
+  },
+  {
+   "id": "unsafe",
+   "implants": [
+    "IMP-UNSAFE"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "MR Unsafe implant",
+   "expect_fields": {}
+  },
+  {
+   "id": "safe",
+   "implants": [
+    "IMP-SAFE"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "MR Safe implant (still requires sign-off)",
+   "expect_fields": {}
+  },
+  {
+   "id": "status-not-stated",
+   "implants": [
+    "IMP-NOTSTATED"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "no MR status",
+   "expect_fields": {}
+  },
+  {
+   "id": "draft-annotation",
+   "implants": [
+    "IMP-DRAFT"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "not human-verified",
+   "expect_fields": {}
+  },
+  {
+   "id": "no-rf-condition",
+   "implants": [
+    "IMP-NO-RF"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "label states no RF condition",
+   "expect_fields": {}
+  },
+  {
+   "id": "b1-only-label-sar-entered",
+   "implants": [
+    "IMP-B1-ONLY"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.0,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "SAR cannot substitute for B1+rms",
+   "expect_fields": {}
+  },
+  {
+   "id": "b1-only-label-ok",
+   "implants": [
+    "IMP-B1-ONLY"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.9,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "B1+rms 1.9 <= 2.0",
+   "expect_fields": {}
+  },
+  {
+   "id": "sar-indep-b1-only",
+   "implants": [
+    "IMP-SAR-INDEP"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "independent SAR limit needs the SAR value",
+   "expect_fields": {}
+  },
+  {
+   "id": "sar-indep-both-ok",
+   "implants": [
+    "IMP-SAR-INDEP"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": 0.9,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "both within",
+   "expect_fields": {}
+  },
+  {
+   "id": "sar-indep-sar-over",
+   "implants": [
+    "IMP-SAR-INDEP"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": 1.2,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "SAR 1.2 > 1.0",
+   "expect_fields": {}
+  },
+  {
+   "id": "multi-pass",
+   "implants": [
+    "IMP-PASSIVE-STAR",
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 10,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "NO_CONFLICT_FOUND",
+   "note": "both implants pass",
+   "expect_fields": {}
+  },
+  {
+   "id": "multi-unsafe",
+   "implants": [
+    "IMP-PASSIVE-STAR",
+    "IMP-UNSAFE"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "one MR Unsafe implant",
+   "expect_fields": {}
+  },
+  {
+   "id": "multi-notstated",
+   "implants": [
+    "IMP-PASSIVE-STAR",
+    "IMP-NOTSTATED"
+   ],
+   "scanner": {
+    "profile_id": "generic-1.5T",
+    "name": "Generic 1.5 T closed bore",
+    "b0_tesla": 1.5,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "one implant without status",
+   "expect_fields": {}
+  },
+  {
+   "id": "multi-legacy-time",
+   "implants": [
+    "IMP-PASSIVE-STAR",
+    "IMP-LEGACY-3T"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 30,
+    "sfg_at_implant_t_per_m": 5
+   },
+   "expected": "CONFLICT_FOUND",
+   "note": "legacy implant allows only 15 min",
+   "expect_fields": {
+    "IMP-LEGACY-3T": {
+     "max_active_scan_time_min": "FAIL"
+    }
+   }
+  },
+  {
+   "id": "multi-star-active-b1-only",
+   "implants": [
+    "IMP-PASSIVE-STAR",
+    "IMP-ACTIVE-WB"
+   ],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "local",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": 1.5,
+      "wb_sar_w_per_kg": null,
+      "head_sar_w_per_kg": null
+     }
+    ],
+    "total_active_scan_time_min": 25,
+    "sfg_at_implant_t_per_m": 10,
+    "device_configuration_confirmed": true,
+    "scan_region": "lumbar spine"
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "passive implant needs SAR values",
+   "expect_fields": {}
+  },
+  {
+   "id": "no-implants",
+   "implants": [],
+   "scanner": {
+    "profile_id": "generic-3T",
+    "name": "Generic 3 T closed bore",
+    "b0_tesla": 3.0,
+    "scanner_type": "cylindrical",
+    "b0_orientation": "horizontal",
+    "max_slew_rate_t_per_m_per_s": 200.0,
+    "transmit_coils": [
+     "body",
+     "head"
+    ],
+    "rf_excitation_modes": [
+     "CP"
+    ]
+   },
+   "protocol": {
+    "operating_mode": "normal",
+    "transmit_coil": "body",
+    "receive_coil": "body",
+    "rf_excitation": "CP",
+    "nucleus": "1H",
+    "sequences": [
+     {
+      "name": "seq1",
+      "b1rms_uT": null,
+      "wb_sar_w_per_kg": 1.5,
+      "head_sar_w_per_kg": 2.0
+     }
+    ],
+    "total_active_scan_time_min": 40,
+    "sfg_at_implant_t_per_m": 10
+   },
+   "expected": "NEEDS_REVIEW",
+   "note": "nothing to check",
+   "expect_fields": {}
+  }
+ ]
+}

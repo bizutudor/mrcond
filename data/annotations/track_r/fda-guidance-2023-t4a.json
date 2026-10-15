@@ -1,0 +1,605 @@
+{
+ "doc_id": "fda-guidance-2023-t4a",
+ "device_name": "Star Active Implant System, whole-body exams (fictional example)",
+ "manufacturer": "U.S. FDA (example labeling)",
+ "device_type": "active implant (example)",
+ "mr_status": {
+  "status": "EXTRACTED",
+  "value": "MR Conditional",
+  "normalized_value": "MR Conditional",
+  "comparator": "eq",
+  "evidence": [
+   {
+    "doc_id": "fda-guidance-2023-t4a",
+    "page": 30,
+    "char_start": 1369,
+    "char_end": 1439,
+    "quote": "an MR Conditional active implant called the Star Active Implant System",
+    "verified": true
+   }
+  ]
+ },
+ "condition_sets": [
+  {
+   "scope": "Whole-body MR examinations, 1.5 T",
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     1.5
+    ],
+    "unit": "T",
+    "normalized_value": [
+     1.5
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 394,
+      "char_end": 441,
+      "quote": "Static Magnetic Field Strength (B0) 1.5T and 3T",
+      "verified": true
+     }
+    ]
+   },
+   "nucleus": {
+    "status": "EXTRACTED",
+    "value": "31P (phosphorus)",
+    "normalized_value": [
+     "1H",
+     "31P"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 442,
+      "char_end": 473,
+      "quote": "Type of Nuclei 31P (phosphorus)",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "Cylindrical",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 474,
+      "char_end": 501,
+      "quote": "MR Scanner Type Cylindrical",
+      "verified": true
+     }
+    ]
+   },
+   "b0_orientation": {
+    "status": "EXTRACTED",
+    "value": "Horizontal",
+    "normalized_value": "horizontal",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 502,
+      "char_end": 533,
+      "quote": "B0 Field Orientation Horizontal",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 25.0,
+    "unit": "T/m",
+    "normalized_value": 25.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 534,
+      "char_end": 587,
+      "quote": "Maximum Spatial Field Gradient 25 T/m (2500 gauss/cm)",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 588,
+      "char_end": 633,
+      "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+      "verified": true
+     }
+    ]
+   },
+   "rf_excitation": {
+    "status": "EXTRACTED",
+    "value": "Circularly Polarized (CP)",
+    "normalized_value": [
+     "CP"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 634,
+      "char_end": 673,
+      "quote": "RF Excitation Circularly Polarized (CP)",
+      "verified": true
+     }
+    ]
+   },
+   "transmit_coil": {
+    "status": "EXTRACTED",
+    "value": "Integrated Whole Body Transmit Coil",
+    "normalized_value": [
+     "body"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 674,
+      "char_end": 731,
+      "quote": "RF Transmit Coil Type Integrated Whole Body Transmit Coil",
+      "verified": true
+     }
+    ]
+   },
+   "receive_coil": {
+    "status": "EXTRACTED",
+    "value": "Any",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 732,
+      "char_end": 756,
+      "quote": "RF Receive Coil Type Any",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 757,
+      "char_end": 793,
+      "quote": "Operating Mode Normal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 2.0,
+    "unit": "W/kg",
+    "normalized_value": 2.0,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 794,
+      "char_end": 852,
+      "quote": "RF Conditions For 1.5T MR Scanner: Whole-Body SAR ≤ 2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "minutes",
+    "normalized_value": 30.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 960,
+      "char_end": 1000,
+      "quote": "Scan Duration Scan for up to 30 minutes.",
+      "verified": true
+     }
+    ]
+   },
+   "wait_time_min": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "minutes",
+    "normalized_value": 30.0,
+    "normalized_unit": "min",
+    "comparator": "ge",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 1001,
+      "char_end": 1050,
+      "quote": "Wait 30 minutes before the next \nimaging session.",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Any landmark is acceptable",
+    "normalized_value": "unrestricted",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 1051,
+      "char_end": 1090,
+      "quote": "Scan Regions Any landmark is acceptable",
+      "verified": true
+     }
+    ]
+   },
+   "device_configuration": {
+    "status": "EXTRACTED",
+    "value": "Stimulation OFF",
+    "normalized_value": "Stimulation OFF",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 357,
+      "char_end": 393,
+      "quote": "Device Configuration Stimulation OFF",
+      "verified": true
+     }
+    ]
+   }
+  },
+  {
+   "set_id": "cs2",
+   "scope": "Whole-body MR examinations, 3 T",
+   "b0_tesla": {
+    "status": "EXTRACTED",
+    "value": [
+     3.0
+    ],
+    "unit": "T",
+    "normalized_value": [
+     3.0
+    ],
+    "normalized_unit": "T",
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 394,
+      "char_end": 441,
+      "quote": "Static Magnetic Field Strength (B0) 1.5T and 3T",
+      "verified": true
+     }
+    ]
+   },
+   "nucleus": {
+    "status": "EXTRACTED",
+    "value": "31P (phosphorus)",
+    "normalized_value": [
+     "1H",
+     "31P"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 442,
+      "char_end": 473,
+      "quote": "Type of Nuclei 31P (phosphorus)",
+      "verified": true
+     }
+    ]
+   },
+   "scanner_type": {
+    "status": "EXTRACTED",
+    "value": "Cylindrical",
+    "normalized_value": "cylindrical",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 474,
+      "char_end": 501,
+      "quote": "MR Scanner Type Cylindrical",
+      "verified": true
+     }
+    ]
+   },
+   "b0_orientation": {
+    "status": "EXTRACTED",
+    "value": "Horizontal",
+    "normalized_value": "horizontal",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 502,
+      "char_end": 533,
+      "quote": "B0 Field Orientation Horizontal",
+      "verified": true
+     }
+    ]
+   },
+   "max_sfg_t_per_m": {
+    "status": "EXTRACTED",
+    "value": 25.0,
+    "unit": "T/m",
+    "normalized_value": 25.0,
+    "normalized_unit": "T/m",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 534,
+      "char_end": 587,
+      "quote": "Maximum Spatial Field Gradient 25 T/m (2500 gauss/cm)",
+      "verified": true
+     }
+    ]
+   },
+   "max_slew_rate_t_per_m_per_s": {
+    "status": "EXTRACTED",
+    "value": 200.0,
+    "unit": "T/m/s",
+    "normalized_value": 200.0,
+    "normalized_unit": "T/m/s",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 588,
+      "char_end": 633,
+      "quote": "Maximum Gradient Slew Rate 200 T/m/s per axis",
+      "verified": true
+     }
+    ]
+   },
+   "rf_excitation": {
+    "status": "EXTRACTED",
+    "value": "Circularly Polarized (CP)",
+    "normalized_value": [
+     "CP"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 634,
+      "char_end": 673,
+      "quote": "RF Excitation Circularly Polarized (CP)",
+      "verified": true
+     }
+    ]
+   },
+   "transmit_coil": {
+    "status": "EXTRACTED",
+    "value": "Integrated Whole Body Transmit Coil",
+    "normalized_value": [
+     "body"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 674,
+      "char_end": 731,
+      "quote": "RF Transmit Coil Type Integrated Whole Body Transmit Coil",
+      "verified": true
+     }
+    ]
+   },
+   "receive_coil": {
+    "status": "EXTRACTED",
+    "value": "Any",
+    "normalized_value": [
+     "any"
+    ],
+    "comparator": "in",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 732,
+      "char_end": 756,
+      "quote": "RF Receive Coil Type Any",
+      "verified": true
+     }
+    ]
+   },
+   "operating_mode": {
+    "status": "EXTRACTED",
+    "value": "Normal Operating Mode",
+    "normalized_value": "normal",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 757,
+      "char_end": 793,
+      "quote": "Operating Mode Normal Operating Mode",
+      "verified": true
+     }
+    ]
+   },
+   "b1rms_max_uT": {
+    "status": "EXTRACTED",
+    "value": 1.7,
+    "unit": "μT",
+    "normalized_value": 1.7,
+    "normalized_unit": "uT",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 853,
+      "char_end": 888,
+      "quote": "For 3T MR Scanner : B1+rms ≤ 1.7 μT",
+      "verified": true
+     }
+    ]
+   },
+   "wb_sar_max_w_per_kg": {
+    "status": "EXTRACTED",
+    "value": 1.2,
+    "unit": "W/kg",
+    "normalized_value": 1.2,
+    "normalized_unit": "W/kg",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 890,
+      "char_end": 959,
+      "quote": "for MR scanners that \ndo not report B1+rms, Whole-Body SAR ≤ 1.2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "sar_is_b1rms_fallback": {
+    "status": "EXTRACTED",
+    "value": true,
+    "normalized_value": true,
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 890,
+      "char_end": 959,
+      "quote": "for MR scanners that \ndo not report B1+rms, Whole-Body SAR ≤ 1.2 W/kg",
+      "verified": true
+     }
+    ]
+   },
+   "max_active_scan_time_min": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "minutes",
+    "normalized_value": 30.0,
+    "normalized_unit": "min",
+    "comparator": "le",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 960,
+      "char_end": 1000,
+      "quote": "Scan Duration Scan for up to 30 minutes.",
+      "verified": true
+     }
+    ]
+   },
+   "wait_time_min": {
+    "status": "EXTRACTED",
+    "value": 30.0,
+    "unit": "minutes",
+    "normalized_value": 30.0,
+    "normalized_unit": "min",
+    "comparator": "ge",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 1001,
+      "char_end": 1050,
+      "quote": "Wait 30 minutes before the next \nimaging session.",
+      "verified": true
+     }
+    ]
+   },
+   "scan_region_restrictions": {
+    "status": "EXTRACTED",
+    "value": "Any landmark is acceptable",
+    "normalized_value": "unrestricted",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 1051,
+      "char_end": 1090,
+      "quote": "Scan Regions Any landmark is acceptable",
+      "verified": true
+     }
+    ]
+   },
+   "device_configuration": {
+    "status": "EXTRACTED",
+    "value": "Stimulation OFF",
+    "normalized_value": "Stimulation OFF",
+    "comparator": "eq",
+    "evidence": [
+     {
+      "doc_id": "fda-guidance-2023-t4a",
+      "page": 30,
+      "char_start": 357,
+      "char_end": 393,
+      "quote": "Device Configuration Stimulation OFF",
+      "verified": true
+     }
+    ]
+   }
+  }
+ ],
+ "provenance": {
+  "extractor": "manual-draft",
+  "verification": "draft-unverified",
+  "annotator": "assistant-draft",
+  "created_at": "2026-10-15T12:00:00Z",
+  "text_extractor": "pypdf 6.20.1",
+  "notes": [
+   "DRAFT - must be reviewed by a human before use as gold."
+  ]
+ }
+}
