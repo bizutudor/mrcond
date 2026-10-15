@@ -5,6 +5,7 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev,reports]"
 npm --prefix web ci
 npm --prefix web run build
-# Download the public Track R documents for the review page. The FDA examples work without them,
-# so a site that is unreachable is reported but does not stop the setup.
-mrcond fetch || echo "Some manufacturer documents could not be downloaded; the FDA examples still work."
+# Download the public Track R documents in the background, so the app can start right away.
+# The FDA examples work without them; each manufacturer document appears on the review page once
+# it has been downloaded. Progress: /tmp/mrcond-fetch.log
+setsid nohup mrcond fetch >/tmp/mrcond-fetch.log 2>&1 </dev/null &

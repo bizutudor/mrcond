@@ -18,9 +18,10 @@ offsets and a short verbatim quote it came from; a value whose quote cannot be f
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bizutudor/mrcond?quickstart=1)
 
-The Codespace installs the package, builds the web UI, downloads the public Track R documents (`mrcond fetch`) and
-starts the app; the first start takes a few minutes. If no browser tab opens, open port 8000 from the *Ports* tab; if
-the app is not running, start it with `mrcond serve`. Things to try:
+The Codespace installs the package, builds the web UI and starts the app; the first start takes a few minutes. The
+public Track R documents download in the background (`mrcond fetch`, log in `/tmp/mrcond-fetch.log`). Open port 8000
+from the *Ports* tab (port numbers other than 8000 belong to the editor itself); if the app is not running, start it
+with `mrcond serve`. Things to try:
 
 1. **Review labeling** → *Star Active Implant System, whole-body exams* (FDA example): every extracted condition links
    to its highlighted quote, and each value can be accepted, edited or rejected.
